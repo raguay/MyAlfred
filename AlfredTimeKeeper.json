@@ -1,5 +1,5 @@
 {
-    "version": 1.3,
+    "version": 1.4,
     "download_uri": "https://github.com/raguay/MyAlfred/blob/master/AlfredTimeKeeper.alfredworkflow",
-    "description": "added new icon for AlfredTimeKeeper from Schneppi."
+    "description": "fixing icon displaying."
 }
