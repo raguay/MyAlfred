@@ -1,5 +1,5 @@
 {
-    "version": 1.1,
+    "version": 1.2,
     "download_uri": "https://github.com/raguay/MyAlfred/blob/master/AlfredTimeKeeper.alfredworkflow",
-    "description": "Fixed error reporting."
+    "description": "Fixed vweek to work properly."
 }
