@@ -35,4 +35,4 @@ Setting a new list will clear the count. The file specified is copied to a work 
 
 All workflows now work with AlleyOop, except where mentioned otherwise. Please let me know if you have any problems, suggestions, or commits. These are documented more fully on my web site <a href="http://customct.com">http://customct.com</a>.
 
-**goAlfred** I created a library in the <a href="http://www.golang.org">go language from Google</a>. You can see the library here: <a href="https://github.com/raguay/goAlfred">goAlfred</a>
+**goAlfred** I created a library in the <a href="http://www.golang.org">go language from Google</a> to make it easier to create your Alfred workflow. You can see the library here: <a href="https://github.com/raguay/goAlfred">goAlfred</a>
