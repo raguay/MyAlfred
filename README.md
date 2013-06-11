@@ -22,21 +22,21 @@ This is where I am keeping my Alfred 2 extensions. I currently have the followin
 **Compress Image** This workflow is for compressing png images to a smaller size with scaling. You have to edit the script to your image size you want to scale. Type "ci" and then a name of the image file. A list of images will be shown for you to select the one you want to compress. When using Alfred to browse files, if you view a directory, the  compress image command will show in the right arrow menu listing. You can then compress all the files in that directory. You have to have the Image Magick library and utilities already installed to use this workflow. You can now use the 'ci.ext' command to set the extension of the final image, which will cause conversion if set to a different type. I also added the 'png-jpg' and 'jpg-png' commands to simply convert the specifed images to the other format. The ImageMagick library is included now due to many people having problems installing it.
 
 **Next Item**  This little workflow allows you to sequentially step through items in multiple list files. You use the "Next Item: Set File" file action on the file containing a list of items: One item per line. For example, a list of urls; one per line. Then the hot key (you will have to set yourself since mine being <alt><command>n will be erased) will take the next item from the specified first list and copy it to the clipboard and to a notification. If you view all lists before the first list, you will see each corresponding item for each list. The counter is only incremented after passing the item from the first list.
+<table>
+<tr><td>"ni:move #"</td><td>This will move the last set file to the # list. If you do not move the file items to a list number, then it will not get sent to you.</td></tr>
 
-"ni:move #" will move the last set file to the # list. If you do not move the file items to a list number, then it will not get sent to you.
+<tr><td>"ni:item"</td><td>This will give the next item from the first list and increment the counter.</td></tr>
 
-"ni:item" will give the next item from the first list and increment the counter.
+<tr><td>ni:l #"</td><td>This will give the next item from the # list, but the count will not be incremented unless it is list 1.</td></tr>
 
-ni:l #" will give the next item from the # list, but the count will not be incremented unless it is list 1.
+<tr><td>"ni:inc" and "ni:dec"</td><td>These will increment or decrement the counter. </td></tr>
 
-"ni:inc" and "ni:dec" will increment or decrement the counter. 
+<tr><td>"ni:set"</td><td>allows you to set the counter to any number. </td></tr>
 
-"ni:set" allows you to set the counter to any number. 
+<tr><td>"ni:clear"</td><td>will clear the counter and erase the temporary files. </td></tr>
 
-"ni:clear" will clear the counter and erase the temporary files. 
-
-"ni:current" will display the current count number.
-
+<tr><td>"ni:current"</td><td>will display the current count number.</td></tr>
+</table>
 The items are addressed using a zero reference. Therefore, if the counter is 1, the the second line in the file will be displayed.
 
 Setting a new list will clear the count. The file specified is copied to a work area that all the other scripts will use to access it. Therefore, you do not need to worry about the original file being changed.
