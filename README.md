@@ -3,15 +3,17 @@ MyAlfred
 
 This is where I am keeping my Alfred 2 extensions. I currently have the following extensions:
 
-**Alfred Time Keeper** A time tracking extension that allows for any number of projects and tracking the time between them. Still early stage, but very useable. It also has a basic graphical viewing of work hours with a calendar for lookup. The following keywords are used:
-   addproject       This allows you to create a new project
-   atk:project      This allows you to set the current project
-   atk:state        This allows you to set the current state of a project.
-   atk:help         Gives a list of commands for Alfred Time Keeper
-   current          This will show the current project, time, and state.
-   vweek            This shows the time for the current project this week.
-   vmonth            This shows the time for the current project this month.
-   worktime         This displays the time worked on all project for a particular day.
+**Alfred Time Keeper** A time tracking extension that allows for any number of projects and tracking the time between them. Still early stage, but very useable. It also has a basic graphical viewing of work hours with a calendar for lookup. I have started recreating some of the PHP scripts as full go language programs. Please let me know if you have any problems. The following keywords are used:
+<table>
+<tr><td>addproject</td><td>This allows you to create a new project</td></tr>
+<tr><td>atk:project</td><td>This allows you to set the current project</td></tr>
+<tr><td>atk:state</td><td>This allows you to set the current state of a project.</td></tr>
+<tr><td>atk:help</td><td>Gives a list of commands for Alfred Time Keeper</td></tr>
+<tr><td>current</td><td>This will show the current project, time, and state.</td></tr>
+<tr><td>vweek</td><td>This shows the time for the current project this week.</td></tr>
+<tr><td>vmonth</td><td>This shows the time for the current project this month.</td></tr>
+<tr><td>worktime</td><td>This displays the time worked on all project for a particular day.</td></tr>
+</table>
 
 **Name Sequencer** This workflow allows you to sequence through some file names. You set the base name and extension. It will increment the count and place it in the clipboard and Growl it. If there is a file name in the clipboard, you can also just increment the count for the file name.
 
