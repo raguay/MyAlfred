@@ -1,5 +1,5 @@
 {
-    "version": 1.6,
+    "version": 1.7,
     "download_url": "https://github.com/raguay/MyAlfred/blob/master/AlfredTimeKeeper.alfredworkflow",
     "description": "Replaced some of the filter scripts with go lang code and fixed goAlfred library."
 }
