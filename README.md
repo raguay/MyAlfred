@@ -5,17 +5,24 @@ This is where I am keeping my Alfred 2 extensions. I currently have the followin
 
 **Alfred Time Keeper** A time tracking extension that allows for any number of projects and tracking the time between them. Still early stage, but very useable. It also has a basic graphical viewing of work hours with a calendar for lookup. I have started recreating some of the PHP scripts as full go language programs. Please let me know if you have any problems. The following keywords are used:
 <table>
-<tr><td>addproject</td><td>This allows you to create a new project</td></tr>
+<tr><td>atk:addproject</td><td>This allows you to create a new project</td></tr>
 <tr><td>atk:project</td><td>This allows you to set the current project</td></tr>
 <tr><td>atk:state</td><td>This allows you to set the current state of a project.</td></tr>
 <tr><td>atk:help</td><td>Gives a list of commands for Alfred Time Keeper</td></tr>
-<tr><td>current</td><td>This will show the current project, time, and state.</td></tr>
-<tr><td>vweek</td><td>This shows the time for the current project this week.</td></tr>
-<tr><td>vmonth</td><td>This shows the time for the current project this month.</td></tr>
-<tr><td>worktime</td><td>This displays the time worked on all project for a particular day.</td></tr>
+<tr><td>atk:current</td><td>This will show the current project, time, and state.</td></tr>
+<tr><td>atk:week</td><td>This shows the time for the current project this week.</td></tr>
+<tr><td>atk:month</td><td>This shows the time for the current project this month.</td></tr>
+<tr><td>atk:worktime</td><td>This displays the time worked on all project for a particular day.</td></tr>
 </table>
 
 **Name Sequencer** This workflow allows you to sequence through some file names. You set the base name and extension. It will increment the count and place it in the clipboard and Growl it. If there is a file name in the clipboard, you can also just increment the count for the file name.
+<table>
+<tr><td>setname</td><td>This will set the base name for creating filenames.</td></tr>
+<tr><td>setext</td><td>This will set the extension for the filenames created.</td></tr>
+<tr><td>clearcount</td><td>This will set the counter back to zero.</td></tr>
+<tr><td>inccount</td><td>This will increment the counter by one.</td></tr>
+<tr><td>deccount</td><td>This will decrement the counter by one.</td></tr>
+</table>
 
 **Video Time** This workflow is used to find the duration of a video. You can use the 'getvideotime' keyword to search for a particular video to get the duration. The 'getvideodir' keyword is used to scan a full directory. Both are also file actions in the Alfred browser.
 
