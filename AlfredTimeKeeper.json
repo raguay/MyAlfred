@@ -1,5 +1,5 @@
 {
-    "version": 1.9,
+    "version": 1.91,
     "download_url": "https://github.com/raguay/MyAlfred/blob/master/AlfredTimeKeeper.alfredworkflow",
     "description": "Added conditional building of the XML for the project list. Fixed default being accepted."
 }
