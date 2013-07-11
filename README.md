@@ -50,6 +50,8 @@ Setting a new list will clear the count. The file specified is copied to a work 
 
 **Text Massagers** This is an example workflow of ways to process text in the clipboard and stuff it back. I use all of these almost everyday. The first one is changing a Markdown anchor tag to HTML. The second removes "streaming=off" from a WordPress shortcode and replaces it with "streaming=on". Also, there is a text massager for fixing time stamps. It will make sure the time stamp in the clipboard is "00:00:00" format. It adds "0" padding as needed. This one is not AlleyOOP enabled since it is intended as a demonstration of doing text manipulation with Alfred. 
 
+**TextSoap Cleaners** This workflow allows the running of the various TextSoap cleaners on the current clipboard contents. It remembers past cleaners and gives them as an option. Or, you can popup the full list of cleaners to use.
+
 All workflows now work with AlleyOop, except where mentioned otherwise. Please let me know if you have any problems, suggestions, or commits. These are documented more fully on my web site <a href="http://customct.com">http://customct.com</a>.
 
 **goAlfred** I created a library in the <a href="http://www.golang.org">go language from Google</a> to make it easier to create your Alfred workflow. You can see the library here: <a href="https://github.com/raguay/goAlfred">goAlfred</a>
