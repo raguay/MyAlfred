@@ -54,6 +54,16 @@ Setting a new list will clear the count. The file specified is copied to a work 
 
 **ExpanDrive Toolkit** This workflow gives some added features for ExpanDrive. You can use the hotkey "<ctrl><alt><cmd>e" to change the current selection in Finder or Path Finder that is in a subdirectory for a ExpanDrive drive to a web facing reference to that file. You set up the ExpanDrive name using the "ed:edir" keyword. You then can set the web facing directory prefix with "ed:wdir". The scripts currently do not check for accuracy, that is up to the user.
 
+**s3cmdToolkit** This workflow gives the ability to upload files to Amazon S3 using the s3cmd commandline function. You can download the s3cmd utility at <a href="http://s3tools.org/s3cmd">http://s3tools.org/s3cmd</a>. Here are the currently supported keywords and file actions:
+<table>
+<tr><td>"s3c:copydir"</td><td>This keywork allows you to pick a directory that contains videos (mp4|mov). The videos will be copied to the corresponding directory on s3. Make sure to set the base directory using "s3c:base".</td></tr>
+<tr><td>"s3c:base"</td><td>You use this keyword to set the base directory for s3. It should be the format of "s3://<bucket>/directory/..".</td></tr>
+<tr><td>"s3c:target"</td><td>This keyword is used to set a target directory under the base directory to copy individual files to s3 using the file action.</td></tr>
+<tr><td>"s3c:sbase"</td><td>This will show the base directory in a notification.</td></tr>
+<tr><td>"s3c:starget"</td><td>This will show the target directory in a notification.</td></tr>
+<tr><td>"s3c:copy file"</td><td>This file action will copy the file in the Alfred browser to the base and target directory on s3.</td></tr>
+</table>
+
 All workflows now work with AlleyOop, except where mentioned otherwise. Please let me know if you have any problems, suggestions, or commits. These are documented more fully on my web site <a href="http://customct.com">http://customct.com</a>.
 
 **goAlfred** I created a library in the <a href="http://www.golang.org">go language from Google</a> to make it easier to create your Alfred workflow. You can see the library here: <a href="https://github.com/raguay/goAlfred">goAlfred</a>
