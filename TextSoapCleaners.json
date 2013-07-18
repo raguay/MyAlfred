@@ -1,5 +1,5 @@
 {
-    "version": 1.,
+    "version": 1.2,
     "download_url": "https://github.com/raguay/MyAlfred/blob/master/TestSoapCleaners.alfredworkflow",
     "description": "This workflow allows the use of TextSoap cleaners on the current clipboard with a History feature."
 }
