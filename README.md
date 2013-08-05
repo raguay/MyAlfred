@@ -68,6 +68,10 @@ Setting a new list will clear the count. The file specified is copied to a work 
 <tr><td>"s3c:configure"</td><td>This keyword will open a terminal and start the configuration process for the s3cmd command line tool. This has to be done before using the other commands.</td></tr>
 </table>
 
+**Calca Toolkit** This workflow is for keeping track of budgets and notes using the <a href="https://itunes.apple.com/us/app/calca/id635758264?mt=12&ign-mpt=uo%3D4">Calca.app</a>. You can set a budget template ("calca:budget" keyword and selecting "Edit Template"), and then create budgets each month ("calca:budget" keyword and selecting "Make from Template"). The "calca:budget" keyword will also show all of the available budget files that you can edit. You can use the "calca:notes" keyword to see available notes to edit or create a new one from scratch giving the title in the Alfred command line. If you hold down the command key while pressing enter, it will paste the contents in the clipboard to the selected file.
+
+**Alfred Bible** This workflow will request Bible passages from the "Ephesians 4:14" website:  http://www.4-14.org.uk/xml-bible-web-service-api.  Access to this API is currently free. This workflow will request the given verse from Alfred edit line or from the current OS X selection, request the verse(s), and return it in the clipboard and a notification. You can then paste it where ever you want. You can always change the "Copy to Clipboard" box to also paste into current application. I will be adding more functionality to this workflow in the future and eventually have a full Bible study app.
+
 All workflows now work with AlleyOop, except where mentioned otherwise. Please let me know if you have any problems, suggestions, or commits. These are documented more fully on my web site <a href="http://customct.com">http://customct.com</a>.
 
 **goAlfred** I created a library in the <a href="http://www.golang.org">go language from Google</a> to make it easier to create your Alfred workflow. You can see the library here: <a href="https://github.com/raguay/goAlfred">goAlfred</a>
