@@ -68,7 +68,46 @@ Setting a new list will clear the count. The file specified is copied to a work 
 <tr><td>"s3c:configure"</td><td>This keyword will open a terminal and start the configuration process for the s3cmd command line tool. This has to be done before using the other commands.</td></tr>
 </table>
 
-**Calca Toolkit** This workflow is for keeping track of budgets and notes using the <a href="https://itunes.apple.com/us/app/calca/id635758264?mt=12&ign-mpt=uo%3D4">Calca.app</a>. You can set a budget template ("calca:budget" keyword and selecting "Edit Template"), and then create budgets each month ("calca:budget" keyword and selecting "Make from Template"). The "calca:budget" keyword will also show all of the available budget files that you can edit. You can use the "calca:notes" keyword to see available notes to edit or create a new one from scratch giving the title in the Alfred command line. If you hold down the command key while pressing enter, it will paste the contents in the clipboard to the selected file.
+**Budget Workflow (formerly Calca Toolkit)** This workflow is for keeping track of budgets <a href="https://itunes.apple.com/us/app/calca/id635758264?mt=12&ign-mpt=uo%3D4">Calca.app</a>. You can set a budget template ("b:budget" keyword and selecting "Edit Template"), and then create budgets each month ("b:budget" keyword and selecting "Make from Template"). The "b:budget" keyword will also show all of the available budget files that you can view and/or edit. 
+
+**Notes Workflow (formerly a part of Calca Toolkit)** This workflow if for taking notes. It was designed for Calca, but can be used with any editor. So far, I have the following keywords:
+
+<table>
+<tr><td>“n:setnotes" </td> <td>This allows for the setting for the location of your notes directory. It is a directory select. Therefore, the directory has to already exist.</td></tr>
+
+<tr><td>“n:notes" </td> <td>This will list every file in the notes directory that ends in ".txt". You can create a new notes file or open an existing notes file. If you select one of the files while holding the <cmd> key, you can append the contents of the clipboard to the specified notes file. If that is a new file, it will be started with the clipboard contents. You can move the selected file to the trash by holding the <fn> key. This requires the trash command to be in the "/usr/local/bin" directory. You can convert the markdown file to html using the <shift> key when you press <enter> on a file name. This requires the pandoc program to be loaded onto your system. The <alt> key will open the file with Marked.app. </td></tr>
+
+<tr><td>“n:setEditor”</td> <td>This allows you to set the editor that you want to use for editing your notes. It defaults to Calca, but you can set it to any application you want. It will bring up a file selector with applications from your main application folder and your personal applications folder.</td></tr>
+</table>
+
+**Todo Workflow** This workflow is for working with todo lists using TaskPaper. Since TaskPaper uses plain text files for everything, it is easy to write scripts to add functionality that the program does not have. So far, I have the following keywords defined:
+
+<table>
+<tr><td>t:settodo</td><td>This command allows you to set directory for your todos. It will setup the supporting files and directories as well.</td></tr>
+
+ <tr><td>t:createtodaytodo</td><td>This command will take the everyday, weekly, and monthly todos and combine them to the left over todos from the last time you created todos. It will also archive the finished todos.</td></tr>
+
+<tr><td>t:showtoday</td><td>This command will open todays (or the most current) todo list in TaskPaper.</td></tr>
+
+<tr><td>t:showyesterday</td><td>This command will open yesterdays (or the one before the most current) todo list in TaskPaper.</td></tr>
+
+<tr><td>t:showfinished</td><td>This command will open the archived done tasks in TaskPaper.</td></tr>
+
+<tr><td>t:addmonthlytodo</td><td>This command will ask for the day of the month and the task. It will then place that in the monthly todo directory for that day. When a new todo list is created, then it will pull in that days tasks.</td></tr>
+
+<tr><td>t:addeveryday</td><td>This adds a task to the everyday task list. Every task placed in this list will be added to the current todo list when the t:createtodaytodo command is run.</td></tr>
+
+<tr><td>t:addweekdaytask</td><td>This command will ask for the day of the week and the task. It will then place that it in the weekly todo directory for that day of the week. When a new todo list is created, then it will pull in that days tasks.</td></tr>
+
+
+<tr><td>t:doing</td><td>This creates a new dated entry for the current journal. Currently, there is one journal, but I plan to expand this latter.</td></tr>
+
+<tr><td>t:showdoing</td><td>This opens the current journal in TaskPaper.</td></tr>
+
+<tr><td>t:showprojects</td><td>This opens the projects task file in TaskPaper. This is for ongoing projects and their tasks.</td></tr>
+
+<tr><td>On the burner…</td><td>I am planing more functionality, including repeating tasks and certain day task scheduling. Also, more journaling tasks as well. Stay tuned!</td></tr>
+</table>
 
 **Alfred Bible** This workflow will request Bible passages from the "Ephesians 4:14" website:  http://www.4-14.org.uk/xml-bible-web-service-api.  Access to this API is currently free. This workflow will request the given verse from Alfred edit line or from the current OS X selection, request the verse(s), and return it in the clipboard and a notification. You can then paste it where ever you want. If you use the hotkey to search for the selected verse, it will automatically replace it with the text. There is also a hotkey to paste both versions: English and Thai. It now translates the English Bible book names to Thai. I will be adding more functionality to this workflow in the future and eventually have a full Bible study app. Let me know what functions you need.
 
