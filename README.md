@@ -131,9 +131,11 @@ If you invoke the keyword “sp:” or if you press the hotkey without a selecti
 
 | Command | Description |
 |---|---|
-dc:enable | This enables DwellClick. |
-dc:disable | This disables DwellClick. |
-dc:action | This will give a list of possible actions. When you select an action, it will be performed right then. If you select an action with the shift key presses, it will delay the action until the next dwelling click. |
+dc:enable   | Enable DwellClick
+dc:disable  | Disable DwellClick
+dc:action   | Performs the action selected. This is a script filter that will list all possible actions. If the command key is pressed, it delays the action for the next dwell click. If the function key is pressed, then the action is stored for use with the first hotkey action.
+
+The first hotkey action is for performing the stored action. The second is an example of making a fixed action to an hotkey. Very useful.
 
 Please let me know if you have any problems, suggestions, or commits. These are documented more fully on my web site <a href="http://customct.com">http://customct.com</a>.
 
