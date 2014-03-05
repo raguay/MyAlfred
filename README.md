@@ -127,6 +127,13 @@ After you set a hotkey, you can select text and edit it on the Alfred command li
 
 If you invoke the keyword “sp:” or if you press the hotkey without a selection, it will offer to put the clipboard as the text to edit. Press enter on the “clipboard” option and the contents of the clipboard will be copied to the Alfred command line for editing.
 
+**DwellClick Workflow** This workflow has commands for [DwellClick from Pilotmoon](https://pilotmoon.com/dwellclick/). You can:
+
+| Command | Description |
+|---|---|
+dc:enable | This enables DwellClick. |
+dc:disable | This disables DwellClick. |
+dc:action | This will give a list of possible actions. When you select an action, it will be performed right then. If you select an action with the shift key presses, it will delay the action until the next dwelling click. |
 
 Please let me know if you have any problems, suggestions, or commits. These are documented more fully on my web site <a href="http://customct.com">http://customct.com</a>.
 
