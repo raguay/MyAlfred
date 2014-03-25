@@ -137,6 +137,23 @@ dc:action   | Performs the action selected. This is a script filter that will li
 
 The first hotkey action is for performing the stored action. The second is an example of making a fixed action to an hotkey. Very useful.
 
+**Fish Toolbox** This is a toolbox of functions for working with the [Fish Shell](http://fishshell.com/).  You can install fish shell with homebrew:
+
+	brew install fish
+
+Currently, the functions are:
+
+| Command | Description |
+|---|---|
+f:seteditor  |  Set the code editor to use
+f:editfunction |   Edit a Fish function. It will show a list of possible functions to edit. If you press FN key and select a function, that function will be deleted.
+f:editconfig  | Edit the Fish Configuration file.
+f:newfunction | Create a new fish function.
+
+with more to come.
+
+****
+
 Please let me know if you have any problems, suggestions, or commits. These are documented more fully on my web site <a href="http://customct.com">http://customct.com</a>.
 
 **goAlfred** I created a library in the <a href="http://www.golang.org">go language from Google</a> to make it easier to create your Alfred workflow. You can see the library here: <a href="https://github.com/raguay/goAlfred">goAlfred</a>
