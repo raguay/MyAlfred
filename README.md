@@ -82,32 +82,31 @@ Setting a new list will clear the count. The file specified is copied to a work 
 
 **Todo Workflow** This workflow is for working with todo lists using TaskPaper. Since TaskPaper uses plain text files for everything, it is easy to write scripts to add functionality that the program does not have. So far, I have the following keywords defined:
 
-<table>
-<tr><td>t:settodo</td><td>This command allows you to set directory for your todos. It will setup the supporting files and directories as well.</td></tr>
+This workflow is designed to make using TaskPaper more useful and fun. You can also use any text editor, but some functionality will be lost. So far, I have the following keywords:
 
- <tr><td>t:createtodaytodo</td><td>This command will take the everyday, weekly, and monthly todos and combine them to the left over todos from the last time you created todos. It will also archive the finished todos.</td></tr>
+| Command | Description |
+| --------:| ---------- |
+| t:settodo | This command allows you to set the directory for your todos. It will setup the supporting files and sub-directories as  well. This is the first action to perform with this workflow. |
+| t:createtodaytodo | This command will take the everyday, weekly, and monthly todos and combine them to the left over todos  from the last time you created todos. It will also archive the finished todos. |
+| t:showtoday | This command will open todays (or the most current) todo list in TaskPaper.  |
+| t:showyesterday | This command will open yesterdays (or the one before the most current) todo list in TaskPaper.  |
+| t:showfinished | This command will open the archived done tasks in TaskPaper.  |
+| t:addmonthlytodo | This command will ask for the day of the month and the task. It will then place that in the monthly todo  directory for that day. When a new todo list is created, then it will pull in that days tasks. |
+| t:addeveryday | This adds a task to the everyday task list. Every task placed in this list will be added to the current todo list everytime it is created.|
+| t:createtodaytodo command is run. | t:addweekdaytask | This command will ask for the day of the week and the task. It will  then place that it in the weekly todo directory for that day of the week. When a new todo list is created, then it will pull in that days tasks. |
+| t:doing | This creates a new dated entry for the current journal. It will ask which journal to place the entry into. The standard  doing.txt journal will automatically be created. |
+| t:showdoing | This opens the current doing journal in TaskPaper.  |
+| t:showprojects | This opens the projects task file in TaskPaper. This is for ongoing projects and their tasks.  |
+| t:sortdone | This command takes the topmost TaskPaper list and sorts all of the done tag entries to the bottom.  |
+| t:seteditor | This command is for setting the text editor to use.  |
+| t:newjournal | This command will allow you to create new journal files.  |
+| t:showjournal | This command is for opening a journal in the editor. It will ask which journal and give you the current list of  journals. |
+| t:settz | This command is for setting the time zone. A list of time zones will be given and you select the one you are in.  |
+| t:showtz | This command will show the currently set time zone.  |
 
-<tr><td>t:showtoday</td><td>This command will open todays (or the most current) todo list in TaskPaper.</td></tr>
+On the burner…
 
-<tr><td>t:showyesterday</td><td>This command will open yesterdays (or the one before the most current) todo list in TaskPaper.</td></tr>
-
-<tr><td>t:showfinished</td><td>This command will open the archived done tasks in TaskPaper.</td></tr>
-
-<tr><td>t:addmonthlytodo</td><td>This command will ask for the day of the month and the task. It will then place that in the monthly todo directory for that day. When a new todo list is created, then it will pull in that days tasks.</td></tr>
-
-<tr><td>t:addeveryday</td><td>This adds a task to the everyday task list. Every task placed in this list will be added to the current todo list when the t:createtodaytodo command is run.</td></tr>
-
-<tr><td>t:addweekdaytask</td><td>This command will ask for the day of the week and the task. It will then place that it in the weekly todo directory for that day of the week. When a new todo list is created, then it will pull in that days tasks.</td></tr>
-
-
-<tr><td>t:doing</td><td>This creates a new dated entry for the current journal. Currently, there is one journal, but I plan to expand this latter.</td></tr>
-
-<tr><td>t:showdoing</td><td>This opens the current journal in TaskPaper.</td></tr>
-
-<tr><td>t:showprojects</td><td>This opens the projects task file in TaskPaper. This is for ongoing projects and their tasks.</td></tr>
-
-<tr><td>On the burner…</td><td>I am planing more functionality, including repeating tasks and certain day task scheduling. Also, more journaling tasks as well. Stay tuned!</td></tr>
-</table>
+I am planing more functionality, including repeating. Also, more journaling tasks as well. Stay tuned!
 
 **Alfred Bible** This workflow will request Bible passages from the "Ephesians 4:14" website:  http://www.4-14.org.uk/xml-bible-web-service-api.  Access to this API is currently free. This workflow will request the given verse from Alfred edit line or from the current OS X selection, request the verse(s), and return it in the clipboard and a notification. You can then paste it where ever you want. If you use the hotkey to search for the selected verse, it will automatically replace it with the text. There is also a hotkey to paste both versions: English and Thai. It now translates the English Bible book names to Thai. I will be adding more functionality to this workflow in the future and eventually have a full Bible study app. Let me know what functions you need.
 
