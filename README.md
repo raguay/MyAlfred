@@ -93,7 +93,7 @@ This workflow is designed to make using TaskPaper more useful and fun. You can a
 | t:showfinished | This command will open the archived done tasks in TaskPaper.  |
 | t:addmonthlytodo | This command will ask for the day of the month and the task. It will then place that in the monthly todo  directory for that day. When a new todo list is created, then it will pull in that days tasks. |
 | t:addeveryday | This adds a task to the everyday task list. Every task placed in this list will be added to the current todo list everytime it is created.|
-| t:createtodaytodo command is run. | t:addweekdaytask | This command will ask for the day of the week and the task. It will  then place that it in the weekly todo directory for that day of the week. When a new todo list is created, then it will pull in that days tasks. |
+| t:addweekdaytask | This command will ask for the day of the week and the task. It will  then place that it in the weekly todo directory for that day of the week. When a new todo list is created, then it will pull in that days tasks. |
 | t:doing | This creates a new dated entry for the current journal. It will ask which journal to place the entry into. The standard  doing.txt journal will automatically be created. |
 | t:showdoing | This opens the current doing journal in TaskPaper.  |
 | t:showprojects | This opens the projects task file in TaskPaper. This is for ongoing projects and their tasks.  |
