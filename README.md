@@ -80,9 +80,7 @@ Setting a new list will clear the count. The file specified is copied to a work 
 <tr><td>“n:setEditor”</td> <td>This allows you to set the editor that you want to use for editing your notes. It defaults to Calca, but you can set it to any application you want. It will bring up a file selector with applications from your main application folder and your personal applications folder.</td></tr>
 </table>
 
-**Todo Workflow** This workflow is for working with todo lists using TaskPaper. Since TaskPaper uses plain text files for everything, it is easy to write scripts to add functionality that the program does not have. So far, I have the following keywords defined:
-
-This workflow is designed to make using TaskPaper more useful and fun. You can also use any text editor, but some functionality will be lost. So far, I have the following keywords:
+**Todo Workflow** This workflow is for working with todo lists using TaskPaper. But, you can set any other editor you want as well. Since TaskPaper uses plain text files for everything, it is easy to write scripts to add functionality that the program does not have. So far, I have the following keywords defined:
 
 | Command | Description |
 | --------:| ---------- |
