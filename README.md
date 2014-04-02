@@ -1,3 +1,4 @@
+
 MyAlfred
 ========
 
@@ -50,7 +51,18 @@ Setting a new list will clear the count. The file specified is copied to a work 
 
 **Text Massagers** This is an example workflow of ways to process text in the clipboard and stuff it back. I use all of these almost everyday. The first one is changing a Markdown anchor tag to HTML. The second removes "streaming=off" from a WordPress shortcode and replaces it with "streaming=on". Also, there is a text massager for fixing time stamps. It will make sure the time stamp in the clipboard is "00:00:00" format. It adds "0" padding as needed. This one is not AlleyOOP enabled since it is intended as a demonstration of doing text manipulation with Alfred.
 
-**TextSoap Cleaners** This workflow allows the running of the various TextSoap cleaners on the current clipboard contents. It remembers past cleaners and gives them as an option. Or, you can popup the full list of cleaners to use. If you start typing the name of a already picked cleaner, it will narrow down the list to cleaners that match what you type. Just added a hotkey setup to perform the last cleaner on the currently selected text and place it back. 8/28/2013 - Added the "tclean:getcleaners" to store a list of all cleaners and "tclfull" to select from that list one cleaner to apply to the clipboard contents. There is now a hotkey that will copy the current context, ask for a cleaner from the entire list of cleaners, apply it, and paste it back into place.
+**TextSoap Cleaners** This workflow interfaces with [TextSoap](http://www.unmarked.com/textsoap/), a great text processing program. I now use it more than awk! The following are the keywords defined:
+
+| Command | Description |
+|---|---|
+| tc:clean | This keyword will present a list of all previously used cleaners to pick from. Start typing to narrow down the list. When you hit enter on an entry, it will perform that cleaner on the clipboard. If you hold down the fn key, it will delete that cleaner from the list of preferred cleaners. You can set a hotkey to repeat the last ran cleaner on the clipboard. |
+| tc:full | This keyword will show all available cleaners obtained from the tc:getcleaners. The cleaner you select will be performed on the clipboard and the cleaner will be saved into your list of preferred cleaners. |
+| tc:fulla | This keyword is the same as tc:full, but will append the results to the topmost application.  You can set a hotkey to perform this on the current selection as well.|
+| tc:seteditor | Allows you to set the text editor for editing the list of preferred cleaners. |
+| tc:editlist | Allows you to edit the list of preferred cleaners using the editor already setup. |
+| tc:getcleaners | This will query TextSoap for the list of cleaners it has. You should do this each time you create new cleaners you want to use with this workflow. |
+| tc:addcleaner | This will set the string given into the list of preferred cleaners. |
+| tc:count | This will count the number of lines, words, and characters in the clipboard. If a string is passed with it, it will count that string. You can set a hotkey to count the current selection. |
 
 **ExpanDrive Toolkit** This workflow gives some added features for ExpanDrive. You can use the hotkey "<ctrl><alt><cmd>e" to change the current selection in Finder or Path Finder that is in a subdirectory for a ExpanDrive drive to a web facing reference to that file. You set up the ExpanDrive name using the "ed:edir" keyword. You then can set the web facing directory prefix with "ed:wdir". The scripts currently do not check for accuracy, that is up to the user.
 
