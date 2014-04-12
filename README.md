@@ -53,11 +53,9 @@ Setting a new list will clear the count. The file specified is copied to a work 
 
 | Command | Description |
 |---|---|
-|<alt><command>m  | Expects a markdown anchor line in the clipboard and converts it to a HTML anchor within a list item.|
-
-|<alt><command>t  | Fixes a time into HH:MM:SS format no matter what it was before.|
-
-|<shift><command>” | Takes the current selection and passes it to the “tm:select” command for selecting the text massager from a list. It will then perform the selected “massage” to the text and copy it to the clipboard and back into the document it was grabbed from if possible.|
+|&lt;alt&gt;&lt;command&gt;m  | Expects a markdown anchor line in the clipboard and converts it to a HTML anchor within a list item.|
+|&lt;alt&gt;&lt;command&gt;t  | Fixes a time into HH:MM:SS format no matter what it was before.|
+|&lt;shift&gt;&lt;command&gt;” | Takes the current selection and passes it to the “tm:select” command for selecting the text massager from a list. It will then perform the selected “massage” to the text and copy it to the clipboard and back into the document it was grabbed from if possible.|
 
 **TextSoap Cleaners** This workflow interfaces with [TextSoap](http://www.unmarked.com/textsoap/), a great text processing program. I now use it more than awk! The following are the keywords defined:
 
