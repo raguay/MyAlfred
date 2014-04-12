@@ -49,7 +49,15 @@ The items are addressed using a zero reference. Therefore, if the counter is 1, 
 
 Setting a new list will clear the count. The file specified is copied to a work area that all the other scripts will use to access it. Therefore, you do not need to worry about the original file being changed.
 
-**Text Massagers** This is an example workflow of ways to process text in the clipboard and stuff it back. I use all of these almost everyday. The first one is changing a Markdown anchor tag to HTML. The second removes "streaming=off" from a WordPress shortcode and replaces it with "streaming=on". Also, there is a text massager for fixing time stamps. It will make sure the time stamp in the clipboard is "00:00:00" format. It adds "0" padding as needed. This one is not AlleyOOP enabled since it is intended as a demonstration of doing text manipulation with Alfred.
+**Text Massagers** I am often changing text around to different formats in large quantities. So, I made a workflow for keeping all of them. I call it text massagers because you are "massaging" the text with the script. You can use this as your template for your own massagers. All of these scripts takes the item from the clipboard, massages it, and places back into the clipboard while showing you the results.
+
+| Command | Description |
+|---|---|
+|<alt><command>m  | Expects a markdown anchor line in the clipboard and converts it to a HTML anchor within a list item.|
+
+|<alt><command>t  | Fixes a time into HH:MM:SS format no matter what it was before.|
+
+|<shift><command>” | Takes the current selection and passes it to the “tm:select” command for selecting the text massager from a list. It will then perform the selected “massage” to the text and copy it to the clipboard and back into the document it was grabbed from if possible.|
 
 **TextSoap Cleaners** This workflow interfaces with [TextSoap](http://www.unmarked.com/textsoap/), a great text processing program. I now use it more than awk! The following are the keywords defined:
 
