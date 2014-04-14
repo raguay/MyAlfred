@@ -166,6 +166,8 @@ f:newfunction | Create a new fish function.
 
 with more to come.
 
+**Instant Search** This workflow is the translation of Brett Terpstra's LaunchBar script for Alfred. You have to have his Instant Search Service installed. For more information, go to [SearchLink - BrettTerpstra.com](http://brettterpstra.com/projects/searchlink/).
+
 ****
 
 Please let me know if you have any problems, suggestions, or commits. These are documented more fully on my web site <a href="http://customct.com">http://customct.com</a>.
