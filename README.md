@@ -1,6 +1,7 @@
 MyAlfred
 ========
 
+
 This is where I am keeping my Alfred 2 extensions. I currently have the following extensions:
 
 **Alfred Time Keeper** A time tracking extension that allows for any number of projects and tracking the time between them. Still early stage, but very useable. It also has a basic graphical viewing of work hours with a calendar for lookup. I have started recreating some of the PHP scripts as full go language programs. Please let me know if you have any problems. The following keywords are used:
@@ -54,7 +55,10 @@ Setting a new list will clear the count. The file specified is copied to a work 
 |---|---|
 |&lt;alt&gt;&lt;command&gt;m  | Expects a markdown anchor line in the clipboard and converts it to a HTML anchor within a list item.|
 |&lt;alt&gt;&lt;command&gt;t  | Fixes a time into HH:MM:SS format no matter what it was before.|
-|&lt;shift&gt;&lt;command&gt;” | Takes the current selection and passes it to the “tm:select” command for selecting the text massager from a list. It will then perform the selected “massage” to the text and copy it to the clipboard and back into the document it was grabbed from if possible.|
+|&lt;shift&gt;&lt;command&gt;” | Takes the current selection and passes it to the “tm:select” command for selecting the text massager from a list. The list will show the resulting string. It will then perform the selected “massage” to the text and copy it to the clipboard and back into the document it was grabbed from if possible.|
+|tm:select|Takes the string on the Alfred Prompt and runs it through the different massagers and shows the output in the list. When the user selects one of the massagers, it will copy the resulting string to the clipboard and to the document that is open.|
+|&lt;shift&gt;&lt;alt&gt;&quot;| Takes the current selection and passes it to the “tm:selectn” command for selecting the text massager from a list. It will then perform the selected “massage” to the text and copy it to the clipboard and back into the document it was grabbed from if possible.|
+|tm:selectn|Same as "tm:select" except for not displaying the results in the list. This is for slower computers.|
 
 **TextSoap Cleaners** This workflow interfaces with [TextSoap](http://www.unmarked.com/textsoap/), a great text processing program. I now use it more than awk! The following are the keywords defined:
 
