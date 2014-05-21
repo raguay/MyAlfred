@@ -184,6 +184,19 @@ with more to come.
 | pl:conf | Will allow you to browse the Powerline configuration directory and edit the files and create new files. |
 | pl:goconf | This will open the configuration directory in Alfred or in Finder if the cmd key is pressed. |
 
+**Open in Alfred**
+
+This workflow allows you to open a Terminal window or iTerm windows directory in Alfred.
+
+You type "oa:install" to install a helper script into your /usr/local/bin directory. Make sure that directory exists, is writable by you, and in your path. 
+   
+   Then you can use these commands:
+    
+| Command | Description |
+|---|--|
+|oa:terminal|open the topmost terminal window in Alfred
+|oa:iterm|open the topmost iterm window in Alfred
+     
 ****
 
 Please let me know if you have any problems, suggestions, or commits. These are documented more fully on my web site <a href="http://customct.com">http://customct.com</a>.
