@@ -193,7 +193,7 @@ You type "oa:install" to install a helper script into your /usr/local/bin direct
    Then you can use these commands:
     
 | Command | Description |
-|---|--|
+|---|---|
 |oa:terminal|open the topmost terminal window in Alfred
 |oa:iterm|open the topmost iterm window in Alfred
      
