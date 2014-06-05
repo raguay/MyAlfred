@@ -188,15 +188,27 @@ with more to come.
 
 This workflow allows you to open a Terminal window or iTerm windows directory in Alfred.
 
-You type "oa:install" to install a helper script into your /usr/local/bin directory. Make sure that directory exists, is writable by you, and in your path. 
-   
+You type "oa:install" to install a helper script into your /usr/local/bin directory. Make sure that directory exists, is writable by you, and in your path.
+
    Then you can use these commands:
-    
+
 | Command | Description |
 |---|---|
 |oa:terminal|open the topmost terminal window in Alfred
 |oa:iterm|open the topmost iterm window in Alfred
-     
+
+**Title Case Server**
+
+This workflow goes with an upcoming tutorial on using golang with Alfred on tutplus.com. It currently runs a small web app for doing title case conversions. The workflow has these commands:
+
+| Command | Description |
+|---|---|
+|tcs:launch|This will start the title case server on port 9910|
+|tcs:stop|This will stop the title case server|
+|tcs:convert|This will take a string on the Alfred prompt, send it to the title case server, and return the result in a notification and the clipboard.|
+
+It also has a hotkey specified to take the selected text, convert it, and paste it back in place. You will have to set the hotkey yourself. The go source code is included in the workflow.
+
 ****
 
 Please let me know if you have any problems, suggestions, or commits. These are documented more fully on my web site <a href="http://customct.com">http://customct.com</a>.
