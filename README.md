@@ -209,6 +209,18 @@ This workflow goes with an upcoming tutorial on using golang with Alfred on tutp
 
 It also has a hotkey specified to take the selected text, convert it, and paste it back in place. You will have to set the hotkey yourself. The go source code is included in the workflow.
 
+**Folding Text Workflow**
+
+This workflow is a work in progress. As I come up with more things I want to do with Folding Text program, I will be adding to this workflow. If there is something you would like to see added, just let me know. Most of the functions I found on the FoldingText website and compiled them here for easy use.
+
+| Command | Description |
+|---|---|
+| ft:autofocus | This does the autofocus workflow. Move the todo at the current cursor to the bottom most "# Autofocus.todo" list. It creates one if there is not one. |
+| ft:next | Find the "@next" todo tag, makes it @done, and sets the next todo as @next. |
+| ft:marked | Open the current file in Marked.app |
+| ft:tagremove | Gives a list of tags in the current document and will remove all the ones selected in the list. |
+| ft:tags | This one is not done. It now just lists all tags in the current document. |
+
 ****
 
 Please let me know if you have any problems, suggestions, or commits. These are documented more fully on my web site <a href="http://customct.com">http://customct.com</a>.
