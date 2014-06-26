@@ -72,6 +72,9 @@ Setting a new list will clear the count. The file specified is copied to a work 
 | tc:getcleaners | This will query TextSoap for the list of cleaners it has. You should do this each time you create new cleaners you want to use with this workflow. |
 | tc:addcleaner | This will set the string given into the list of preferred cleaners. |
 | tc:count | This will count the number of lines, words, and characters in the clipboard. If a string is passed with it, it will count that string. You can set a hotkey to count the current selection. |
+| tc:loadpopclipext | This will load the popclip extension for executing the last cleaner on the highlighted text. |
+
+There are also three places to set your hotkeys: one for doing a character/word/line count of your selection, one for evoking the last cleaner on selected text, and one for choosing from the full list of cleaner to apply on the currently selected text.
 
 **ExpanDrive Toolkit** This workflow gives some added features for ExpanDrive. You can use the hotkey "<ctrl><alt><cmd>e" to change the current selection in Finder or Path Finder that is in a subdirectory for a ExpanDrive drive to a web facing reference to that file. You set up the ExpanDrive name using the "ed:edir" keyword. You then can set the web facing directory prefix with "ed:wdir". The scripts currently do not check for accuracy, that is up to the user.
 
