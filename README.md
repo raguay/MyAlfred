@@ -222,7 +222,16 @@ This workflow is a work in progress. As I come up with more things I want to do 
 | ft:next | Find the "@next" todo tag, makes it @done, and sets the next todo as @next. |
 | ft:marked | Open the current file in Marked.app |
 | ft:tagremove | Gives a list of tags in the current document and will remove all the ones selected in the list. |
-| ft:tags | This one is not done. It now just lists all tags in the current document. |
+| ft:safari | This gets the tabs in the current Safari Web Browser and copies their addresses to the topmost FoldingText document. |
+| ft:chrome | This gets the tabs in the current Chrome Web Browser and copies their addresses to the topmost FoldingText document. |
+| ft:countunfolded | This will count all the characters, words, and lines of text that is not folded. Great for geting word counts of an article with all non-essential areas folded away! |
+| ft:getvisible | This copies all the unfolded text to the clipboard. |
+| ft:open | This will allow you to open any FoldingText, Markdown, or plain txt files in your home directory. It looks for the ‘ft’, ‘md’, ‘txt’ extensions. |
+| ft:gototag | This will list every tag in the topmost document. When you select one, all lines without that tag are folded away. Place the cursor in a line and unfold and you are there in the document. |
+| ft:openfilelist | This will open every file you have in the FoldingText file list. |
+| ft:AddFile | This file action allows you to place files in to your FoldingText file list. |
+| ft:showfiles | This shows you every file in your file list. Selecting one will open just that one file, or bring it to the front if it is already open. Select a file with cmd and the file will be taken off the list (but not touched on the HD). |
+| ft:docs | This gives a list of FoldingText documentation documents you can select and open.|
 
 ****
 
