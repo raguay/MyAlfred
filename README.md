@@ -233,6 +233,16 @@ This workflow is a work in progress. As I come up with more things I want to do 
 | ft:showfiles | This shows you every file in your file list. Selecting one will open just that one file, or bring it to the front if it is already open. Select a file with cmd and the file will be taken off the list (but not touched on the HD). |
 | ft:docs | This gives a list of FoldingText documentation documents you can select and open.|
 
+**Time Adding Workflow**
+
+ I am often needing to add up a series to times in a document. This workflow makes it very easy. Clear the accumulator, select a time value, and hit your hotkey combination you assigned in this workflow. The time will be accumulated. You can show the time in Hr:min:sec format or just plain minutes. Have fun!
+
+| ta:clear   | This clears the accumulator |
+| ta:showmin | Show the accumulated time in just minutes. |
+| ta:showhr  | Show the accumulated time |
+
+There is a hotkey you need to set for adding the currently selected time.
+
 ****
 
 Please let me know if you have any problems, suggestions, or commits. These are documented more fully on my web site <a href="http://customct.com">http://customct.com</a>.
