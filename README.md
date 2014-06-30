@@ -237,6 +237,7 @@ This workflow is a work in progress. As I come up with more things I want to do 
 
  I am often needing to add up a series to times in a document. This workflow makes it very easy. Clear the accumulator, select a time value, and hit your hotkey combination you assigned in this workflow. The time will be accumulated. You can show the time in Hr:min:sec format or just plain minutes. Have fun!
 
+| Command | Description |
 |---|---|
 | ta:clear   | This clears the accumulator |
 | ta:showmin | Show the accumulated time in just minutes. |
