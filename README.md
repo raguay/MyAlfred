@@ -214,7 +214,7 @@ It also has a hotkey specified to take the selected text, convert it, and paste 
 
 **Folding Text Workflow**
 
-This workflow is a work in progress. As I come up with more things I want to do with Folding Text program, I will be adding to this workflow. If there is something you would like to see added, just let me know. Most of the functions I found on the FoldingText website and compiled them here for easy use.
+This workflow is a work in progress. As I come up with more things I want to do with Folding Text program, I will be adding to this workflow. If there is something you would like to see added, just let me know. Most of the functions I found on the FoldingText website and compiled them here for easy use. The new bookmarking feature is the coolest thing!
 
 | Command | Description |
 |---|---|
@@ -232,6 +232,9 @@ This workflow is a work in progress. As I come up with more things I want to do 
 | ft:AddFile | This file action allows you to place files in to your FoldingText file list. |
 | ft:showfiles | This shows you every file in your file list. Selecting one will open just that one file, or bring it to the front if it is already open. Select a file with cmd and the file will be taken off the list (but not touched on the HD). |
 | ft:docs | This gives a list of FoldingText documentation documents you can select and open.|
+| ft:addurihandler | This adds a system script to handle "ftdoc://" URIs by loading the file specified in FoldingText. It works to launch bookmarks to files and a location in the file. |
+| ft:mbkmark | This gets a URI for the current cursor location in the topmost FoldingText document and adds it to the bookmark list. You have to supply a name for the bookmark. |
+| ft:bookmarks | This shows every bookmark and allows you to open it, remove it (function key), or create a markdown link to the bookmark and paste into the topmost application (command key). |
 
 **Time Adding Workflow**
 
