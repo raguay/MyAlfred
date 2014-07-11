@@ -248,6 +248,9 @@ This workflow is a work in progress. As I come up with more things I want to do 
 
 There is a hotkey you need to set for adding the currently selected time.
 
+**Zip Info**
+This workflow has one command:  zi:view. This will show you the zip files in your home directory's Documents folder. When you select one, it will open a Python window showing the contents of the zip file.
+
 ****
 
 Please let me know if you have any problems, suggestions, or commits. These are documented more fully on my web site <a href="http://customct.com">http://customct.com</a>.
