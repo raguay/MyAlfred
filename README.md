@@ -235,6 +235,8 @@ This workflow is a work in progress. As I come up with more things I want to do 
 | ft:addurihandler | This adds a system script to handle "ftdoc://" URIs by loading the file specified in FoldingText. It works to launch bookmarks to files and a location in the file. |
 | ft:mbkmark | This gets a URI for the current cursor location in the topmost FoldingText document and adds it to the bookmark list. You have to supply a name for the bookmark. |
 | ft:bookmarks | This shows every bookmark and allows you to open it, remove it (function key), or create a markdown link to the bookmark and paste into the topmost application (command key). |
+| ft:inbox | This allows you to add a message line to the end of a block with the @inbox tag. |
+| ft:notetag | This one will get a list of tags in the top FoldingText document. The user can select a tag and then give a message. That message will be added to the end of that tag node. |
 
 **Time Adding Workflow**
 
