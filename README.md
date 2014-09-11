@@ -119,12 +119,13 @@ There are also three places to set your hotkeys: one for doing a character/word/
 <tr><td>“n:setEditor”</td> <td>This allows you to set the editor that you want to use for editing your notes. It defaults to Calca, but you can set it to any application you want. It will bring up a file selector with applications from your main application folder and your personal applications folder.</td></tr>
 </table>
 
-**Todo Workflow** This workflow is for working with todo lists using TaskPaper. But, you can set any other editor you want as well. Since TaskPaper uses plain text files for everything, it is easy to write scripts to add functionality that the program does not have. So far, I have the following keywords defined:
+**Todo Workflow**
+This workflow is for working with todo lists using TaskPaper. But, you can set any other editor you want as well. Since TaskPaper uses plain text files for everything, it is easy to write scripts to add functionality that the program does not have. So far, I have the following keywords defined:
 
 | Command | Description |
 | --------:| ---------- |
 | t:settodo | This command allows you to set the directory for your todos. It will setup the supporting files and sub-directories as  well. This is the first action to perform with this workflow. |
-| t:createtodaytodo | This command will take the everyday, weekly, and monthly todos and combine them to the left over todos  from the last time you created todos. It will also archive the finished todos. |
+| t:createtodaytodo | This command will take the everyday, weekly, monthly, and dated todos and combine them to the left over todos from the last time you created todos. It will also archive the finished todos. Todos that are repeated from the dated category are reset according to the repeat pattern.|
 | t:showtoday | This command will open todays (or the most current) todo list in TaskPaper.  |
 | t:showyesterday | This command will open yesterdays (or the one before the most current) todo list in TaskPaper.  |
 | t:showfinished | This command will open the archived done tasks in TaskPaper.  |
@@ -140,10 +141,11 @@ There are also three places to set your hotkeys: one for doing a character/word/
 | t:showjournal | This command is for opening a journal in the editor. It will ask which journal and give you the current list of  journals. |
 | t:settz | This command is for setting the time zone. A list of time zones will be given and you select the one you are in.  |
 | t:showtz | This command will show the currently set time zone.  |
-
-On the burner…
-
-I am planing more functionality, including repeating. Also, more journaling tasks as well. Stay tuned!
+| t:next | This finds the tag @next, marks that task done, and adds it to the next task. |
+| t:adddatedtask | This allows you to add a task on a particular date that can repeat also. You can repeat by days, weeks, months, or years. It also shows all dated tasks and allows for deleting them. |
+| t:managemonthly | This allows you to pick a monthly task and edit the file or delete the file. |
+| t:manageweekly | This allows you to pick a weekly task to edit or delete. |
+| t:editeverydaytask | This allows you to edit the everyday task file. |
 
 **Alfred Bible** This workflow will request Bible passages from the "Ephesians 4:14" website:  http://www.4-14.org.uk/xml-bible-web-service-api.  Access to this API is currently free. This workflow will request the given verse from Alfred edit line or from the current OS X selection, request the verse(s), and return it in the clipboard and a notification. You can then paste it where ever you want. If you use the hotkey to search for the selected verse, it will automatically replace it with the text. There is also a hotkey to paste both versions: English and Thai. It now translates the English Bible book names to Thai. I will be adding more functionality to this workflow in the future and eventually have a full Bible study app. Let me know what functions you need.
 
