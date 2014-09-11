@@ -120,7 +120,7 @@ There are also three places to set your hotkeys: one for doing a character/word/
 </table>
 
 **Todo Workflow**
-This workflow is for working with todo lists using TaskPaper. But, you can set any other editor you want as well. Since TaskPaper uses plain text files for everything, it is easy to write scripts to add functionality that the program does not have. So far, I have the following keywords defined:
+This workflow is for working with todo lists using TaskPaper or FoldingText. But, you can set any other editor you want as well. Since TaskPaper and FoldingText uses plain text files for everything, it is easy to write scripts to add functionality that the program does not have. So far, I have the following keywords defined:
 
 | Command | Description |
 | --------:| ---------- |
