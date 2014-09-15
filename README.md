@@ -1,8 +1,29 @@
 MyAlfred
 ========
 
-
 This is where I am keeping my Alfred 2 extensions. I currently have the following extensions:
+
+**Mjolnir Workflow**
+
+This workflow is for running scripts using Mjolnir to control your windows. This is just a sample of the things that can be done. Follow this layout and you can do many neat things with Mjolnir.
+
+First off, download Mjolnir from https://github.com/mjolnir-io/mjolnir.git. That site also tells how to get started. To get the command line utility, go to https://github.com/asmagill/mjolnir_asm.ipc and follow it's directions.
+
+Once mjolnir and it's cli program is installed, use the "mj:find mjolnir" command to set the path to the executable.
+
+| Command | Description |
+|---|---|
+|mj:install|This will install some modules that is used in the configuration file for this workflow. It will also install a default configuration file for mjolnir. If you already have one, move it to a temporary location, run this command, and then copy your function to the configuration file. This should be the second command you run to get this workflow running. Since it does download from the web, it will take a while to complete.|
+|mj:reload|This tells mjolnir to reload the configuration file.|
+|mj:nup|This nudges the current window up.|
+|mj:ndown|This nudges the current window down.|
+|mj:nleft|This nudges the current window to the left.|
+|mj:nright|This nudges the current window to the right.|
+|mj:tcaff|This toggles system caffenate.|
+|mj:leftthirds|This moves the current window to the left 1/3 of the screen.|
+|mj:rightthirds|This moves the current window to the right 2/3 of the screen.|
+|mj:snap|This snaps the current window to the closes grid box area.|
+|mj:setgrid|This requires you to put the x, y for a starting position in a 3x3 matrix for the current window. Then you give the width and height. Therefore, to move the current window to the upper left most block in a 3x3 matric, you would do "mj:setgrid 0, 0, 1, 1". There is also a hotkey set to this value as an example.|
 
 **Alfred URI Handler**
 
