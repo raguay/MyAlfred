@@ -24,6 +24,7 @@ Once mjolnir and it's cli program is installed, use the "mj:find mjolnir" comman
 |mj:rightthirds|This moves the current window to the right 2/3 of the screen.|
 |mj:snap|This snaps the current window to the closes grid box area.|
 |mj:setgrid|This requires you to put the x, y for a starting position in a 3x3 matrix for the current window. Then you give the width and height. Therefore, to move the current window to the upper left most block in a 3x3 matric, you would do "mj:setgrid 0, 0, 1, 1". There is also a hotkey set to this value as an example.|
+|mj:command|Type in a command string and it will be sent to Mjolnir directly!|
 
 **Alfred URI Handler**
 
