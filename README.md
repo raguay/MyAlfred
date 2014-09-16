@@ -294,6 +294,9 @@ There is a hotkey you need to set for adding the currently selected time.
 **Zip Info**
 This workflow has one command:  zi:view. This will show you the zip files in your home directory's Documents folder. When you select one, it will open a Python window showing the contents of the zip file.
 
+**Text Case Converter in Swift**
+This workflow is a replication of my "tm:case" command of the Text Massager Workflow done in Swift. You have to have xCode 6 beta 4 to recompile the executable, but it should run on any system that is OS Maverick and up. Instructons for recompling the Alfred Swift Library and the program is in the workflow directory. The one command is "tc:convert". The string given will be shown in captical case, upper case, lower case, and title case.
+
 ****
 
 Please let me know if you have any problems, suggestions, or commits. These are documented more fully on my web site <a href="http://customct.com">http://customct.com</a>.
