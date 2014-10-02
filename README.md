@@ -7,9 +7,9 @@ This is where I am keeping my Alfred 2 extensions. I currently have the followin
 
 This workflow is for running scripts using Mjolnir to control your windows. This is just a sample of the things that can be done. Follow this layout and you can do many neat things with Mjolnir.
 
-First off, download Mjolnir from https://github.com/mjolnir-io/mjolnir.git. That site also tells how to get started. To get the command line utility, go to https://github.com/asmagill/mjolnir_asm.ipc and follow it's directions.
+First off, download Mjolnir from https://github.com/mjolnir-io/mjolnir.git. That site also tells how to get started. To install the needed modules and configuration file, you will need to run the "mj:install" command. This will also install the cli program called "mjolnir".
 
-Once mjolnir and it's cli program is installed, use the "mj:find mjolnir" command to set the path to the executable.
+Once mjolnir and it's cli program is installed, use the "mj:find mjolnir" command to set the path to the executable. After this step is done, all the following commands are available to use.
 
 | Command | Description |
 |---|---|
@@ -25,6 +25,11 @@ Once mjolnir and it's cli program is installed, use the "mj:find mjolnir" comman
 |mj:snap|This snaps the current window to the closes grid box area.|
 |mj:setgrid|This requires you to put the x, y for a starting position in a 3x3 matrix for the current window. Then you give the width and height. Therefore, to move the current window to the upper left most block in a 3x3 matric, you would do "mj:setgrid 0, 0, 1, 1". There is also a hotkey set to this value as an example.|
 |mj:command|Type in a command string and it will be sent to Mjolnir directly!|
+|mj:ftmove| This puts every window for FoldingText to the left half of the screen. |
+|mj:fttoday| This focuses the window with the title "today.txt". That is my todo list for the day.|
+|mj:expose| This function accepts a program name. It will show every window for that window in a matrix. It will then ask for the coordinates for the window in the expose. It will then put everything back and bring the selected window to the front. |
+|mj:last|This will move the last window moved around to it's position and size before the movement. This is a single level return. |
+
 
 **Alfred URI Handler**
 
