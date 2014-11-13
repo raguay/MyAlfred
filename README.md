@@ -1,7 +1,11 @@
 MyAlfred
 ========
 
-This is where I am keeping my Alfred 2 extensions. I currently have the following extensions:
+This is where I am keeping my Alfred 2 workflows. I currently have the following workflows:
+
+**Dropzone 3 Workflow**
+
+This workflow is for easily getting to the Dropzone 3 actions directory in Alfred. Use the keyword **dz:browse** to open the directory in Alfred Browser or hold the **CMD** key to show in **Finder**.
 
 **Mjolnir Workflow**
 
