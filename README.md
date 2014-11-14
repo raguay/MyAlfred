@@ -3,6 +3,31 @@ MyAlfred
 
 This is where I am keeping my Alfred 2 workflows. I currently have the following workflows:
 
+**Copy/Move To**
+
+This workflow starts with a "Add Directory to Copy/Move locations..." File Action to create a list of directories to use as targets for a copy/move operation. If actioned on a file, the directory of the file is saved.
+
+Once you have a list, you can use "copy to..." or "move to..." file actions to move or copy files to a previously saved directory.
+
+The keyword "cm:fav" is used to view saved directories, remove one, go to one in Alfred Browser, or open in Finder.
+
+**Alfred Browser Toolbox**
+
+The only keyword is "ff" for "Find a Folder". It is a way to lookup a folding in the Alfred browser or in Finder. Very handy.
+
+There are two Alfred browser actions:
+
+Create a File
+
+Simply creates a file in the directory this file action is ran on. It will ask you for the name and then create it.
+
+Create a Directory
+
+Same as "Create a File", but creates a directory instead.
+
+More coming in the future!
+
+
 **Dropzone 3 Workflow**
 
 This workflow is for easily getting to the Dropzone 3 actions directory in Alfred. Use the keyword **dz:browse** to open the directory in Alfred Browser or hold the **CMD** key to show in **Finder**.
