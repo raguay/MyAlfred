@@ -3,6 +3,17 @@ MyAlfred
 
 This is where I am keeping my Alfred 2 workflows. I currently have the following workflows:
 
+**MacVim Toolbox**
+This workflow adds commands for working with MacVim. They are:
+
+"vim:editterminal"
+Edit the selected file in a MacVim terminal editor
+
+"vim:editgui"
+Edit the selected file in a MacVim gui applicaiton.
+
+Also, I added edit with MacVim in the Alfred Browser. There are hotkeys you can define as well.
+
 **Slap Toolbox**
 These commands are for working with the slap terminal editor easier. You can learn more about slap at https://github.com/slap-editor/slap
 
@@ -12,7 +23,7 @@ These commands are for working with the slap terminal editor easier. You can lea
 "slap:install"
   Runs the npm install for slap. It is assumed that node and npm are already installed. The best way to install node is with HomeBrew (http://brew.io).
     
-A HotKey is setup to take the current OS X selection and open it in slap.
+There is also an edit with Slap in the Alfred Browser. A HotKey is setup to take the current OS X selection and open it in slap.
 
 **Copy/Move To**
 
