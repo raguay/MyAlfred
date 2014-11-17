@@ -3,6 +3,17 @@ MyAlfred
 
 This is where I am keeping my Alfred 2 workflows. I currently have the following workflows:
 
+**Slap Toolbox**
+These commands are for working with the slap terminal editor easier. You can learn more about slap at https://github.com/slap-editor/slap
+
+"slap:edit"
+  Gets the file in Finder or Pathfinder and opens it in iTerm using slap.
+  
+"slap:install"
+  Runs the npm install for slap. It is assumed that node and npm are already installed. The best way to install node is with HomeBrew (http://brew.io).
+    
+A HotKey is setup to take the current OS X selection and open it in slap.
+
 **Copy/Move To**
 
 This workflow starts with a "Add Directory to Copy/Move locations..." File Action to create a list of directories to use as targets for a copy/move operation. If actioned on a file, the directory of the file is saved.
