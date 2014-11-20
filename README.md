@@ -20,9 +20,12 @@ Also, I added edit with MacVim in the Alfred Browser. There are hotkeys you can 
 **Slap Toolbox**
 These commands are for working with the slap terminal editor easier. You can learn more about slap at https://github.com/slap-editor/slap
 
-"slap:edit"
+"slap:edititerm"
   Gets the file in Finder or Pathfinder and opens it in iTerm using slap.
-  
+
+"slap:editterminal"
+  Gets the file in Finder or PathFinder and opens it in Terminal using slap.
+
 "slap:install"
   Runs the npm install for slap. It is assumed that node and npm are already installed. The best way to install node is with HomeBrew (http://brew.io).
     
