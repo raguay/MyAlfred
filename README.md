@@ -7,7 +7,10 @@ This is where I am keeping my Alfred 2 workflows. I currently have the following
 This workflow adds commands for working with MacVim. They are:
 
 "vim:editterminal"
-Edit the selected file in a MacVim terminal editor
+Edit the selected file in a MacVim terminal editor in Terminal.
+
+"vim:edititerm"
+Edit the selected file in MacVim terminal editor in iTerm2.
 
 "vim:editgui"
 Edit the selected file in a MacVim gui applicaiton.
