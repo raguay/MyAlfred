@@ -3,6 +3,16 @@ MyAlfred
 
 This is where I am keeping my Alfred 2 workflows. I currently have the following workflows:
 
+**Peppermint Toolbox**
+This workflow is for using the Peppermint code editor. You can learn more about Peppermint at http://osxpeppermint.com/.
+
+The commands are:
+
+"pp:edit"
+	Gets the file in Finder or Pathfinder and opens it in Peppermint editor.
+
+HotKey is setup to take the current OS X selection and open it in slap. There are also Alfred browser commands and an external trigger defined for it.
+
 **MacVim Toolbox**
 This workflow adds commands for working with MacVim. They are:
 
