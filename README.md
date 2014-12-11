@@ -6,7 +6,9 @@ This is where I am keeping my Alfred 2 workflows. I currently have the following
 **Node Webkit Toolbox**
 <p>Node Webkit is an application for developing applications using web technologies. You can create an application with HTML, CSS, and JavaScript using any Node library.</p>
 
-<p>Once you have your application developed, you can zip it up with a config.json file </p>
+<p>Once you have your application developed, you can zip it up with a config.json file.</p>
+
+The workflow provides the following commands:
 
 <ul>
 <li><em>nw:website</em><br><p>This opens the Node Webkit website on GitHub.</p></li>
