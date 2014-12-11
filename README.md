@@ -5,24 +5,32 @@ This is where I am keeping my Alfred 2 workflows. I currently have the following
 
 **Node Webkit Toolbox**
 <p>Node Webkit is an application for developing applications using web technologies. You can create an application with HTML, CSS, and JavaScript using any Node library.</p>
-    <p>Once you have your application developed, you can zip it up with a config.json file </p>
-    <ul>
-        <li><em>nw:website</em><br><p>This opens the Node Webkit website on GitHub.</p></li>
-        <li><em>nw:open</em><br><p>When the user starts typing, a file ending in the ".nw" extension is looked for according to the work typed. Therefore, if there is a file called "new.nw", as soon as "n" is typed , that file will be displayed.</p></li>
-        <li><em>nw:opendir</em><br><p>Opens the current directory in Finder or Path Finder using Node Webkit. The config.json file should be in that directory.</p></li>
-        <li><em>nw:help</em><br><p>Opens this help program.</p></li>
-    </ul>
-    <p>There are also two File Actions defined: <em>Open Directory</em> that is available on directories, and <em>Open Package</em> that is available on Node Webkit packages.</p>
-    <p>There are also two External Triggers: <em>RunNodeWKDirectory</em> and <em>RunNodeWKPackage</em> which work the same as the file actions. These allow external programs or other Alfred workflows to call a Node Webkit application by passing the full path of the application bundle or directory. The help option for this workflow shows an example of using these External Triggers.</p>
-    <p>The following code will open the help application that is located in the same directory as the code:</p>
-    <pre>
-thisDir=`pwd`;
 
-/usr/bin/osascript -e "tell application \"Alfred 2\" to run trigger \"RunNodeWKDirectory\" in workflow \"com.customct.NodeWebkit\" with argument \"$thisDir/help\""
-    </pre>
+<p>Once you have your application developed, you can zip it up with a config.json file.</p>
+
+The workflow provides the following commands:
+
+<ul>
+<li><em>nw:website</em><br><p>This opens the Node Webkit website on GitHub.</p></li>
+<li><em>nw:open</em><br><p>When the user starts typing, a file ending in the ".nw" extension is looked for according to the work typed. Therefore, if there is a file called "new.nw", as soon as "n" is typed , that file will be displayed.</p></li>
+<li><em>nw:opendir</em><br><p>Opens the current directory in Finder or Path Finder using Node Webkit. The config.json file should be in that directory.</p></li>
+<li><em>nw:help</em><br><p>Opens this help program.</p></li>
+</ul>
+
+<p>There are also two File Actions defined: <em>Open Directory</em> that is available on directories, and <em>Open Package</em> that is available on Node Webkit packages.</p>
     
-    <p>The directory path given in the argument tells Node Webkit where to load the program from. It is set with the <code>pwd</code> command.</p>
-    <p>There will be more tutorials and hacks using this workflow on my website <a href="http://customct.com">Custom Computer Tools</a>.</p>
+<p>There are also two External Triggers: <em>RunNodeWKDirectory</em> and <em>RunNodeWKPackage</em> which work the same as the file actions. These allow external programs or other Alfred workflows to call a Node Webkit application by passing the full path of the application bundle or directory. The help option for this workflow shows an example of using these External Triggers.</p>
+    
+<p>The following code will open the help application that is located in the same directory as the code:</p>
+
+    thisDir=`pwd`;
+
+    /usr/bin/osascript -e "tell application \"Alfred 2\" to run trigger \"RunNodeWKDirectory\" in workflow \"com.customct.NodeWebkit\" with argument \"$thisDir/help\""
+
+    
+<p>The directory path given in the argument tells Node Webkit where to load the program from. It is set with the <code>pwd</code> command.</p>
+    
+<p>There will be more tutorials and hacks using this workflow on my website <a href="http://customct.com">Custom Computer Tools</a>.</p>
 
 **Peppermint Toolbox**
 This workflow is for using the Peppermint code editor. You can learn more about Peppermint at http://osxpeppermint.com/.
