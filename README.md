@@ -4,6 +4,7 @@ MyAlfred
 This is where I am keeping my Alfred 2 workflows. I currently have the following workflows:
 
 **Alfred Editor**
+
 This is a simple editor that makes use of **Node Webkit Toolbox** to run. Therefore, you need to install that workflow first. After installing this workflow, you need to execute **ae:install** to install the data files and the help files into their proper location. You will have a command line program called **ae** you can use to open files from the command line.
 
 The following commands are then useable:
@@ -32,6 +33,7 @@ This command allows you to choose either the Sublime keyboard layout or the Vim 
 This workflow is a work in progress. I am currently working on a command prompt similar to Sublime with expandability using plugins. I also currently have only three themes. If you want to help me create themes, just send me the json file for your theme and I will include it.
 
 **Node Webkit Toolbox**
+
 <p>Node Webkit is an application for developing applications using web technologies. You can create an application with HTML, CSS, and JavaScript using any Node library.</p>
 
 <p>Once you have your application developed, you can zip it up with a config.json file.</p>
