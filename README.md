@@ -111,6 +111,7 @@ Once mjolnir and it's cli program is installed, use the "mj:find mjolnir" comman
 |---|---|
 |mj:install|This will install some modules that is used in the configuration file for this workflow. It will also install a default configuration file for mjolnir. If you already have one, move it to a temporary location, run this command, and then copy your function to the configuration file. This should be the second command you run to get this workflow running. Since it does download from the web, it will take a while to complete.|
 |mj:reload|This tells mjolnir to reload the configuration file.|
+|mj:open|This will bring the Mjolnir console to the front.|
 |mj:nup|This nudges the current window up.|
 |mj:ndown|This nudges the current window down.|
 |mj:nleft|This nudges the current window to the left.|
@@ -123,9 +124,8 @@ Once mjolnir and it's cli program is installed, use the "mj:find mjolnir" comman
 |mj:command|Type in a command string and it will be sent to Mjolnir directly!|
 |mj:ftmove| This puts every window for FoldingText to the left half of the screen. |
 |mj:fttoday| This focuses the window with the title "today.txt". That is my todo list for the day.|
-|mj:expose| This function accepts a program name. It will show every window for that window in a matrix. It will then ask for the coordinates for the window in the expose. It will then put everything back and bring the selected window to the front. |
+|mj:expose| This will list all applications. The list can be shortened by typing the name of the application. When an application is selected, it will show all of it's windows in a matrix on the screen and ask the user for the coordinates of the one to show. It will then put all the windows back to their original position and bring the one selected to the foreground. <br><br>If the application has only one window, it will simply bring it to the front. <br><br>I also created a hotkey for doing Expose on FoldingText. The user can create more in the same manner. Just be careful to get the name of the application correct! |
 |mj:last|This will move the last window moved around to it's position and size before the movement. This is a single level return. |
-
 
 **Alfred URI Handler**
 
