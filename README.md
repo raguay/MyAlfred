@@ -106,7 +106,7 @@ This workflow starts with a "Add Directory to Copy/Move locations..." File Actio
 
 Once you have a list, you can use "copy to..." or "move to..." file actions to move or copy files to a previously saved directory.
 
-The keyword "cm:fav" is used to view saved directories, remove one, go to one in Alfred Browser, or open in Finder.
+The keyword "cm:fav" is used to view saved directories, remove one, go to one in Alfred Browser, open in Finder, or open in the terminal applcation of choice.
 
 **Alfred Browser Toolbox**
 
