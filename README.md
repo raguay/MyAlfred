@@ -140,6 +140,7 @@ Once mjolnir and it's cli program is installed, use the "mj:find mjolnir" comman
 | Command | Description |
 |---|---|
 |mj:install|This will install some modules that is used in the configuration file for this workflow. It will also install a default configuration file for mjolnir. If you already have one, move it to a temporary location, run this command, and then copy your function to the configuration file. This should be the second command you run to get this workflow running. Since it does download from the web, it will take a while to complete.|
+|mj:updateinit | This command just updates the init.lua file to the new one for the workflow. It does not try to update the modules.|
 |mj:reload|This tells mjolnir to reload the configuration file.|
 |mj:open|This will bring the Mjolnir console to the front.|
 |mj:nup|This nudges the current window up.|
