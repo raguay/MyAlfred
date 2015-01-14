@@ -5,7 +5,7 @@ This is where I am keeping my Alfred 2 workflows. I currently have the following
 
 **Textwell Workflow**
 
-This workflow is for working with the [Textwell]() program for the Mac. It currently give a command for opening it quickly, **tw:front**. It also has:
+This workflow is for working with the [Textwell](http://sociomedia.com/textwell/) program for the Mac. It currently give a command for opening it quickly, **tw:front**. It also has:
 
 **tw:edit**
 This copies the selected text and pastes it into TextWell. It also saves the name of the application that the text was copied from.
