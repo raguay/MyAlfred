@@ -3,6 +3,20 @@ MyAlfred
 
 This is where I am keeping my Alfred 2 workflows. I currently have the following workflows:
 
+**Textwell Workflow**
+
+This workflow is for working with the [Textwell]() program for the Mac. It currently give a command for opening it quickly, **tw:front**. It also has:
+
+**tw:edit**
+This copies the selected text and pastes it into TextWell. It also saves the name of the application that the text was copied from.
+
+**tw:paste**
+This copies what is in TextWell and pastes it back into the application that the text was copied from.
+
+There are hotkeys setup for the last two commands as well: tw:edit and tw:paste. You have to assign the hotkeys yourself. This gives similar feature as QuickCursor, though I have never used that application.
+
+I am exploring more ways to extend this workflow. Keep an eye on it!
+
 **Hammerspoon Workflow**
 
 This is a direct port of my Mjolnir Workflow.
@@ -120,18 +134,18 @@ The workflow provides the following commands:
 </ul>
 
 <p>There are also two File Actions defined: <em>Open Directory</em> that is available on directories, and <em>Open Package</em> that is available on Node Webkit packages.</p>
-    
+
 <p>There are also two External Triggers: <em>RunNodeWKDirectory</em> and <em>RunNodeWKPackage</em> which work the same as the file actions. These allow external programs or other Alfred workflows to call a Node Webkit application by passing the full path of the application bundle or directory. The help option for this workflow shows an example of using these External Triggers.</p>
-    
+
 <p>The following code will open the help application that is located in the same directory as the code:</p>
 
     thisDir=`pwd`;
 
     /usr/bin/osascript -e "tell application \"Alfred 2\" to run trigger \"RunNodeWKDirectory\" in workflow \"com.customct.NodeWebkit\" with argument \"$thisDir/help\""
 
-    
+
 <p>The directory path given in the argument tells Node Webkit where to load the program from. It is set with the <code>pwd</code> command.</p>
-    
+
 <p>There will be more tutorials and hacks using this workflow on my website <a href="http://customct.com">Custom Computer Tools</a>.</p>
 
 **Peppermint Toolbox**
