@@ -3,6 +3,26 @@ MyAlfred
 
 This is where I am keeping my Alfred 2 workflows. I currently have the following workflows:
 
+**Markdown Notes to Sideshow Presentation**
+
+This workflow assumes that the kramdown ruby package is installed on the system already. To install, simply type in a command line:
+
+gem install kramdown
+
+Some system might require a sudo for this command. If you get an error message, try:
+
+sudo gem install kramdown
+
+This has a single file action that takes the given markdown file and converts it to a slide show in HTML and CSS.
+
+The command mds:theme is used to set the theme. It will let the user pick from a list of themes.
+
+The command mds:showtheme shows the user the currently set theme.
+
+This workflow is developed in my tutorial [How to Create a Slideshow Presentation From Markdown Notes](https://computers.tutsplus.com/tutorials/how-to-create-a-slideshow-presentation-from-markdown-notes--cms-23062).
+
+More coming soon...
+
 **Textwell Workflow**
 
 This workflow is for working with the [Textwell](http://sociomedia.com/textwell/) program for the Mac. It currently give a command for opening it quickly, **tw:front**. It also has:
