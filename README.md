@@ -3,7 +3,38 @@ MyAlfred
 
 This is where I am keeping my Alfred 2 workflows. I currently have the following workflows:
 
-**Markdown Notes to Sideshow Presentation**
+## List Processing Workflow
+
+This workflow is for processing a text list of items separated by a single character. You set the character and the direction of the search, and the workflow will give you one at a time.
+
+**lp:save**
+This sets the list of items. This is tied to a hotkey that takes the current selection. If there is nothing on the input, the command will grab the clipboard to use. Or, the user can type in what they want.
+
+**lp:next**
+This gives the next item. This is tied to a hotkey as well.
+
+**lp:forwardbackward**
+This sets the direction of the lookup. If backwards, the last item will be given in lp:next. If forwards, the first item in the list will be given.
+
+**lp:setseparator**
+This sets the separator that will be used to process the list.
+
+**lp:reset**
+This sets the list processing back to the original list. Therefore, lp:next starts fresh.
+
+**lp:show**
+This will show the list on the screen for the user to see.
+
+**lp:length**
+This will show the number of items in the list separated by the given separator.
+
+**lp:left**
+This will show the number of items left to be shown.
+
+**lp:shown**
+This will show how many items have been shown.
+
+## Markdown Notes to Sideshow Presentation
 
 This workflow assumes that the kramdown ruby package is installed on the system already. To install, simply type in a command line:
 
@@ -23,7 +54,7 @@ This workflow is developed in my tutorial [How to Create a Slideshow Presentatio
 
 More coming soon...
 
-**Textwell Workflow**
+## Textwell Workflow
 
 This workflow is for working with the [Textwell](http://sociomedia.com/textwell/) program for the Mac. It currently give a command for opening it quickly, **tw:front**. It also has:
 
