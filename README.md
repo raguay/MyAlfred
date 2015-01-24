@@ -68,7 +68,7 @@ There are hotkeys setup for the last two commands as well: tw:edit and tw:paste.
 
 I am exploring more ways to extend this workflow. Keep an eye on it!
 
-**Hammerspoon Workflow**
+## Hammerspoon Workflow
 
 This is a direct port of my Mjolnir Workflow.
 
@@ -140,7 +140,7 @@ I also created a hotkey for doing Expose on FoldingText. The user can create mor
 
 This command undoes the very last window move. This assumes all window movements were done with Hammerspoon and this workflow functions.
 
-**Alfred Editor**
+## Alfred Editor
 
 This is a simple editor that makes use of **Node Webkit Toolbox** to run. Therefore, you need to install that workflow first. After installing this workflow, you need to execute **ae:install** to install the data files and the help files into their proper location. You will have a command line program called **ae** you can use to open files from the command line.
 
@@ -169,7 +169,7 @@ This command allows you to choose either the Sublime keyboard layout or the Vim 
 
 This workflow is a work in progress. I am currently working on a command prompt similar to Sublime with expandability using plugins. I also currently have only three themes. If you want to help me create themes, just send me the json file for your theme and I will include it.
 
-**Node Webkit Toolbox**
+## Node Webkit Toolbox
 
 <p>Node Webkit is an application for developing applications using web technologies. You can create an application with HTML, CSS, and JavaScript using any Node library.</p>
 
@@ -199,7 +199,7 @@ The workflow provides the following commands:
 
 <p>There will be more tutorials and hacks using this workflow on my website <a href="http://customct.com">Custom Computer Tools</a>.</p>
 
-**Peppermint Toolbox**
+## Peppermint Toolbox
 This workflow is for using the Peppermint code editor. You can learn more about Peppermint at http://osxpeppermint.com/.
 
 The commands are:
@@ -223,21 +223,21 @@ Edit the selected file in a MacVim gui applicaiton.
 
 Also, I added edit with MacVim in the Alfred Browser. There are hotkeys you can define as well.
 
-**Slap Toolbox**
+## Slap Toolbox
 These commands are for working with the slap terminal editor easier. You can learn more about slap at https://github.com/slap-editor/slap
 
-"slap:edititerm"
+**slap:edititerm**
   Gets the file in Finder or Pathfinder and opens it in iTerm using slap.
 
-"slap:editterminal"
+**slap:editterminal**
   Gets the file in Finder or PathFinder and opens it in Terminal using slap.
 
-"slap:install"
+**slap:install**
   Runs the npm install for slap. It is assumed that node and npm are already installed. The best way to install node is with HomeBrew (http://brew.io).
 
 There is also an edit with Slap in the Alfred Browser. A HotKey is setup to take the current OS X selection and open it in slap.
 
-**Copy/Move To**
+## Copy/Move To
 
 This workflow starts with a "Add Directory to Copy/Move locations..." File Action to create a list of directories to use as targets for a copy/move operation. If actioned on a file, the directory of the file is saved.
 
@@ -245,7 +245,7 @@ Once you have a list, you can use "copy to..." or "move to..." file actions to m
 
 The keyword "cm:fav" is used to view saved directories, remove one, go to one in Alfred Browser, open in Finder, or open in the terminal applcation of choice.
 
-**Alfred Browser Toolbox**
+## Alfred Browser Toolbox
 
 The only keyword is "ff" for "Find a Folder". It is a way to lookup a folding in the Alfred browser or in Finder. Very handy.
 
@@ -262,11 +262,11 @@ Same as "Create a File", but creates a directory instead.
 More coming in the future!
 
 
-**Dropzone 3 Workflow**
+## Dropzone 3 Workflow
 
 This workflow is for easily getting to the Dropzone 3 actions directory in Alfred. Use the keyword **dz:browse** to open the directory in Alfred Browser or hold the **CMD** key to show in **Finder**.
 
-**Mjolnir Workflow**
+## Mjolnir Workflow
 
 This workflow is for running scripts using Mjolnir to control your windows. This is just a sample of the things that can be done. Follow this layout and you can do many neat things with Mjolnir.
 
@@ -295,7 +295,7 @@ Once mjolnir and it's cli program is installed, use the "mj:find mjolnir" comman
 |mj:expose| This will list all applications. The list can be shortened by typing the name of the application. When an application is selected, it will show all of it's windows in a matrix on the screen and ask the user for the coordinates of the one to show. It will then put all the windows back to their original position and bring the one selected to the foreground. <br><br>If the application has only one window, it will simply bring it to the front. <br><br>I also created a hotkey for doing Expose on FoldingText. The user can create more in the same manner. Just be careful to get the name of the application correct! |
 |mj:last|This will move the last window moved around to it's position and size before the movement. This is a single level return. |
 
-**Alfred URI Handler**
+## Alfred URI Handler
 
 This workflow has one command "au:install". Once you run it, a URI handler for Alfred will be installed. This is used to trigger external triggers in any workflow. The format is:
 
@@ -309,7 +309,8 @@ alfreduri://com.apple.AppleScript.AlfredURIhandler?search=&lt;search query&gt;
 
 The search query needs to be URI encoded as well.
 
-**Alfred Time Keeper**
+## Alfred Time Keeper
+
 A time tracking extension that allows for any number of projects and tracking the time between them. Still early stage, but very useable. It also has a basic graphical viewing of work hours with a calendar for lookup. I have started recreating some of the PHP scripts as full go language programs. Please let me know if you have any problems. The following keywords are used:
 <table>
 <tr><td>atk:addproject</td><td>This allows you to create a new project</td></tr>
@@ -322,7 +323,9 @@ A time tracking extension that allows for any number of projects and tracking th
 <tr><td>atk:worktime</td><td>This displays the time worked on all project for a particular day.</td></tr>
 </table>
 
-**Name Sequencer** This workflow allows you to sequence through some file names. You set the base name and extension. It will increment the count and place it in the clipboard and Growl it. If there is a file name in the clipboard, you can also just increment the count for the file name.
+## Name Sequencer
+
+This workflow allows you to sequence through some file names. You set the base name and extension. It will increment the count and place it in the clipboard and Growl it. If there is a file name in the clipboard, you can also just increment the count for the file name.
 <table>
 <tr><td>setname</td><td>This will set the base name for creating filenames.</td></tr>
 <tr><td>setext</td><td>This will set the extension for the filenames created.</td></tr>
@@ -331,11 +334,17 @@ A time tracking extension that allows for any number of projects and tracking th
 <tr><td>deccount</td><td>This will decrement the counter by one.</td></tr>
 </table>
 
-**Video Time** This workflow is used to find the duration of a video. You can use the 'getvideotime' keyword to search for a particular video to get the duration. The 'getvideodir' keyword is used to scan a full directory. Both are also file actions in the Alfred browser.
+## Video Time
 
-**Compress Image** This workflow is for compressing png images to a smaller size with scaling. You have to edit the script to your image size you want to scale. Type "ci" and then a name of the image file. A list of images will be shown for you to select the one you want to compress. When using Alfred to browse files, if you view a directory, the  compress image command will show in the right arrow menu listing. You can then compress all the files in that directory. You have to have the Image Magick library and utilities already installed to use this workflow. You can now use the 'ci.ext' command to set the extension of the final image, which will cause conversion if set to a different type. I also added the 'png-jpg' and 'jpg-png' commands to simply convert the specifed images to the other format. The ImageMagick library is included now due to many people having problems installing it.
+This workflow is used to find the duration of a video. You can use the 'getvideotime' keyword to search for a particular video to get the duration. The 'getvideodir' keyword is used to scan a full directory. Both are also file actions in the Alfred browser.
 
-**Next Item**  This little workflow allows you to sequentially step through items in multiple list files. You use the "Next Item: Set File" file action on the file containing a list of items: One item per line. For example, a list of urls; one per line. Then the hot key (you will have to set yourself since mine being <alt><command>n will be erased) will take the next item from the specified first list and copy it to the clipboard and to a notification. If you view all lists before the first list, you will see each corresponding item for each list. The counter is only incremented after passing the item from the first list.
+## Compress Image
+
+This workflow is for compressing png images to a smaller size with scaling. You have to edit the script to your image size you want to scale. Type "ci" and then a name of the image file. A list of images will be shown for you to select the one you want to compress. When using Alfred to browse files, if you view a directory, the  compress image command will show in the right arrow menu listing. You can then compress all the files in that directory. You have to have the Image Magick library and utilities already installed to use this workflow. You can now use the 'ci.ext' command to set the extension of the final image, which will cause conversion if set to a different type. I also added the 'png-jpg' and 'jpg-png' commands to simply convert the specifed images to the other format. The ImageMagick library is included now due to many people having problems installing it.
+
+## Next Item
+
+This little workflow allows you to sequentially step through items in multiple list files. You use the "Next Item: Set File" file action on the file containing a list of items: One item per line. For example, a list of urls; one per line. Then the hot key (you will have to set yourself since mine being <alt><command>n will be erased) will take the next item from the specified first list and copy it to the clipboard and to a notification. If you view all lists before the first list, you will see each corresponding item for each list. The counter is only incremented after passing the item from the first list.
 <table>
 <tr><td>"ni:move #"</td><td>This will move the last set file to the # list. If you do not move the file items to a list number, then it will not get sent to you.</td></tr>
 
@@ -355,7 +364,9 @@ The items are addressed using a zero reference. Therefore, if the counter is 1, 
 
 Setting a new list will clear the count. The file specified is copied to a work area that all the other scripts will use to access it. Therefore, you do not need to worry about the original file being changed.
 
-**Text Massagers** I am often changing text around to different formats in large quantities. So, I made a workflow for keeping all of them. I call it text massagers because you are "massaging" the text with the script. You can use this as your template for your own massagers. All of these scripts takes the item from the clipboard, massages it, and places back into the clipboard while showing you the results.
+## Text Massagers
+
+I am often changing text around to different formats in large quantities. So, I made a workflow for keeping all of them. I call it text massagers because you are "massaging" the text with the script. You can use this as your template for your own massagers. All of these scripts takes the item from the clipboard, massages it, and places back into the clipboard while showing you the results.
 
 | Command | Description |
 |---|---|
@@ -366,7 +377,9 @@ Setting a new list will clear the count. The file specified is copied to a work 
 |&lt;shift&gt;&lt;alt&gt;&quot;| Takes the current selection and passes it to the “tm:selectn” command for selecting the text massager from a list. It will then perform the selected “massage” to the text and copy it to the clipboard and back into the document it was grabbed from if possible.|
 |tm:selectn|Same as "tm:select" except for not displaying the results in the list. This is for slower computers.|
 
-**TextSoap Cleaners** This workflow interfaces with [TextSoap](http://www.unmarked.com/textsoap/), a great text processing program. I now use it more than awk! The following are the keywords defined:
+## TextSoap Cleaners
+
+This workflow interfaces with [TextSoap](http://www.unmarked.com/textsoap/), a great text processing program. I now use it more than awk! The following are the keywords defined:
 
 | Command | Description |
 |---|---|
@@ -382,9 +395,13 @@ Setting a new list will clear the count. The file specified is copied to a work 
 
 There are also three places to set your hotkeys: one for doing a character/word/line count of your selection, one for evoking the last cleaner on selected text, and one for choosing from the full list of cleaner to apply on the currently selected text.
 
-**ExpanDrive Toolkit** This workflow gives some added features for ExpanDrive. You can use the hotkey "<ctrl><alt><cmd>e" to change the current selection in Finder or Path Finder that is in a subdirectory for a ExpanDrive drive to a web facing reference to that file. You set up the ExpanDrive name using the "ed:edir" keyword. You then can set the web facing directory prefix with "ed:wdir". The scripts currently do not check for accuracy, that is up to the user.
+## ExpanDrive Toolkit
 
-**s3cmdToolkit** This workflow gives the ability to upload files to Amazon S3 using the s3cmd commandline function. You can download the s3cmd utility at <a href="http://s3tools.org/s3cmd">http://s3tools.org/s3cmd</a>. The workflow currently contains a copy of the s3cmd tool. You will need to open a terminal to the directory that contains the workflow to set your s3 credentials. Please see the directions at <a href="http://s3tools.org/s3cmd">http://s3tools.org/s3cmd</a> to know how to set it up. Here are the currently supported keywords and file actions:
+This workflow gives some added features for ExpanDrive. You can use the hotkey "<ctrl><alt><cmd>e" to change the current selection in Finder or Path Finder that is in a subdirectory for a ExpanDrive drive to a web facing reference to that file. You set up the ExpanDrive name using the "ed:edir" keyword. You then can set the web facing directory prefix with "ed:wdir". The scripts currently do not check for accuracy, that is up to the user.
+
+## s3cmdToolkit
+
+This workflow gives the ability to upload files to Amazon S3 using the s3cmd commandline function. You can download the s3cmd utility at <a href="http://s3tools.org/s3cmd">http://s3tools.org/s3cmd</a>. The workflow currently contains a copy of the s3cmd tool. You will need to open a terminal to the directory that contains the workflow to set your s3 credentials. Please see the directions at <a href="http://s3tools.org/s3cmd">http://s3tools.org/s3cmd</a> to know how to set it up. Here are the currently supported keywords and file actions:
 <table>
 <tr><td>"s3c:copydir"</td><td>This keywork allows you to pick a directory that contains videos (mp4|mov). The videos will be copied to the corresponding directory on s3. Make sure to set the base directory using "s3c:base".</td></tr>
 <tr><td>"s3c:base"</td><td>You use this keyword to set the base directory for s3. It should be the format of "s3://{bucket}/directory/..". It has to be set to "s3://{bucket name}" as the minimum.</td></tr>
@@ -398,9 +415,13 @@ There are also three places to set your hotkeys: one for doing a character/word/
 <tr><td>"s3c:configure"</td><td>This keyword will open a terminal and start the configuration process for the s3cmd command line tool. This has to be done before using the other commands.</td></tr>
 </table>
 
-**Budget Workflow (formerly Calca Toolkit)** This workflow is for keeping track of budgets <a href="https://itunes.apple.com/us/app/calca/id635758264?mt=12&ign-mpt=uo%3D4">Calca.app</a>. You can set a budget template ("b:budget" keyword and selecting "Edit Template"), and then create budgets each month ("b:budget" keyword and selecting "Make from Template"). The "b:budget" keyword will also show all of the available budget files that you can view and/or edit.
+## Budget Workflow (formerly Calca Toolkit)
 
-**Notes Workflow (formerly a part of Calca Toolkit)** This workflow if for taking notes. It was designed for Calca, but can be used with any editor. So far, I have the following keywords:
+This workflow is for keeping track of budgets <a href="https://itunes.apple.com/us/app/calca/id635758264?mt=12&ign-mpt=uo%3D4">Calca.app</a>. You can set a budget template ("b:budget" keyword and selecting "Edit Template"), and then create budgets each month ("b:budget" keyword and selecting "Make from Template"). The "b:budget" keyword will also show all of the available budget files that you can view and/or edit.
+
+## Notes Workflow (formerly a part of Calca Toolkit)
+
+This workflow if for taking notes. It was designed for Calca, but can be used with any editor. So far, I have the following keywords:
 
 <table>
 <tr><td>“n:setnotes" </td> <td>This allows for the setting for the location of your notes directory. It is a directory select. Therefore, the directory has to already exist.</td></tr>
@@ -410,7 +431,8 @@ There are also three places to set your hotkeys: one for doing a character/word/
 <tr><td>“n:setEditor”</td> <td>This allows you to set the editor that you want to use for editing your notes. It defaults to Calca, but you can set it to any application you want. It will bring up a file selector with applications from your main application folder and your personal applications folder.</td></tr>
 </table>
 
-**Todo Workflow**
+## Todo Workflow
+
 This workflow is for working with todo lists using TaskPaper or FoldingText. But, you can set any other editor you want as well. Since TaskPaper and FoldingText uses plain text files for everything, it is easy to write scripts to add functionality that the program does not have. So far, I have the following keywords defined:
 
 | Command | Description |
@@ -438,25 +460,37 @@ This workflow is for working with todo lists using TaskPaper or FoldingText. But
 | t:manageweekly | This allows you to pick a weekly task to edit or delete. |
 | t:editeverydaytask | This allows you to edit the everyday task file. |
 
-**Alfred Bible** This workflow will request Bible passages from the "Ephesians 4:14" website:  http://www.4-14.org.uk/xml-bible-web-service-api.  Access to this API is currently free. This workflow will request the given verse from Alfred edit line or from the current OS X selection, request the verse(s), and return it in the clipboard and a notification. You can then paste it where ever you want. If you use the hotkey to search for the selected verse, it will automatically replace it with the text. There is also a hotkey to paste both versions: English and Thai. It now translates the English Bible book names to Thai. I will be adding more functionality to this workflow in the future and eventually have a full Bible study app. Let me know what functions you need.
+## Alfred Bible
 
-**OctoPOW** This workflow assumes you have octopuses and pow installed on your computer with each octopress site linked into the ~/.pow directory. The POW workflow (https://github.com/phallstrom/AlfredPow) is a great compliment to this workflow and is called by the preview function. First, set up your editor with "octopow:editor". Then, set you current POW project with "octopow". You can create/edit/delete posts with "octopow:post". You can generate your site and preview it in POW using "octopow:preview". You can then deploy you changes with "octopow:deploy". This workflow assumes you have already setup your Octopress site and POW programs on your system. More to come!
+This workflow will request Bible passages from the "Ephesians 4:14" website:  http://www.4-14.org.uk/xml-bible-web-service-api.  Access to this API is currently free. This workflow will request the given verse from Alfred edit line or from the current OS X selection, request the verse(s), and return it in the clipboard and a notification. You can then paste it where ever you want. If you use the hotkey to search for the selected verse, it will automatically replace it with the text. There is also a hotkey to paste both versions: English and Thai. It now translates the English Bible book names to Thai. I will be adding more functionality to this workflow in the future and eventually have a full Bible study app. Let me know what functions you need.
 
-**Run Chrome with Accessibility** This workflow allows you to launch Chrome with the accessibility flag set so that you can use <a href="http://shortcatapp.com/">ShortCat.app</a> with Chrome. It uses ctl-shift-h to launch Chrome or bring it to the front if running. ctl-shift-alt-h to quit Chrome.
+## OctoPOW
 
-**Sermon Scheduler** This workflow aid in the creating of my sermon schedules. Use ss:setdirectory to set the directory for sermons (or whatever you want to create schedules from a template). The use ss:seteditor to set the editor you want to use (I use Sublime). You then can use ss:create to make a new schedule by the template (you might want to edit the template first with the ss:edit and selecting the template). Then use ss:edit to edit one of the schedules or the template.
+This workflow assumes you have octopuses and pow installed on your computer with each octopress site linked into the ~/.pow directory. The POW workflow (https://github.com/phallstrom/AlfredPow) is a great compliment to this workflow and is called by the preview function. First, set up your editor with "octopow:editor". Then, set you current POW project with "octopow". You can create/edit/delete posts with "octopow:post". You can generate your site and preview it in POW using "octopow:preview". You can then deploy you changes with "octopow:deploy". This workflow assumes you have already setup your Octopress site and POW programs on your system. More to come!
+
+## Run Chrome with Accessibility
+
+This workflow allows you to launch Chrome with the accessibility flag set so that you can use <a href="http://shortcatapp.com/">ShortCat.app</a> with Chrome. It uses ctl-shift-h to launch Chrome or bring it to the front if running. ctl-shift-alt-h to quit Chrome.
+
+## Sermon Scheduler
+
+This workflow aid in the creating of my sermon schedules. Use ss:setdirectory to set the directory for sermons (or whatever you want to create schedules from a template). The use ss:seteditor to set the editor you want to use (I use Sublime). You then can use ss:create to make a new schedule by the template (you might want to edit the template first with the ss:edit and selecting the template). Then use ss:edit to edit one of the schedules or the template.
 
 The unique thing about the workflow is that new schedule’s name will always be something like: 2014-Feb02-Feb08.md. The current year, first day of the week and the last day of the week. The ss:create gives you names for the current week and the next 4 weeks.
 
 This works great for me being a missionary. You can change it to meet your own needs.
 
-**Scratch Pad** Sometimes you just need a place to edit some text quickly. Or, simply write a short note to store in the clipboard history (it actually works better than you think). That is where this workflow comes in handy.
+## Scratch Pad
+
+Sometimes you just need a place to edit some text quickly. Or, simply write a short note to store in the clipboard history (it actually works better than you think). That is where this workflow comes in handy.
 
 After you set a hotkey, you can select text and edit it on the Alfred command line. When you press enter, it will be placed into the clipboard. If you press <code><cmd></code> and enter, it will place it into the clipboard and the top most application.
 
 If you invoke the keyword “sp:” or if you press the hotkey without a selection, it will offer to put the clipboard as the text to edit. Press enter on the “clipboard” option and the contents of the clipboard will be copied to the Alfred command line for editing.
 
-**DwellClick Workflow** This workflow has commands for [DwellClick from Pilotmoon](https://pilotmoon.com/dwellclick/). You can:
+## DwellClick Workflow
+
+This workflow has commands for [DwellClick from Pilotmoon](https://pilotmoon.com/dwellclick/). You can:
 
 | Command | Description |
 |---|---|
@@ -466,7 +500,9 @@ dc:action   | Performs the action selected. This is a script filter that will li
 
 The first hotkey action is for performing the stored action. The second is an example of making a fixed action to an hotkey. Very useful.
 
-**Fish Toolbox** This is a toolbox of functions for working with the [Fish Shell](http://fishshell.com/).  You can install fish shell with homebrew:
+## Fish Toolbox
+
+This is a toolbox of functions for working with the [Fish Shell](http://fishshell.com/).  You can install fish shell with homebrew:
 
 	brew install fish
 
@@ -481,9 +517,13 @@ f:newfunction | Create a new fish function.
 
 with more to come.
 
-**Instant Search** This workflow is the translation of Brett Terpstra's LaunchBar script for Alfred. You have to have his Instant Search Service installed. For more information, go to [SearchLink - BrettTerpstra.com](http://brettterpstra.com/projects/searchlink/).
+## Instant Search
 
-**Powerline Toolbox** This is a toolbox of functions for working with [Powerline](). Currently, the commands are:
+This workflow is the translation of Brett Terpstra's LaunchBar script for Alfred. You have to have his Instant Search Service installed. For more information, go to [SearchLink - BrettTerpstra.com](http://brettterpstra.com/projects/searchlink/).
+
+## Powerline Toolbox
+
+This is a toolbox of functions for working with [Powerline](). Currently, the commands are:
 
 | Command | Description |
 | --- | --- |
@@ -495,7 +535,7 @@ with more to come.
 | pl:conf | Will allow you to browse the Powerline configuration directory and edit the files and create new files. |
 | pl:goconf | This will open the configuration directory in Alfred or in Finder if the cmd key is pressed. |
 
-**Open in Alfred**
+## Open in Alfred
 
 This workflow allows you to open a Terminal window or iTerm windows directory in Alfred.
 
@@ -508,7 +548,7 @@ You type "oa:install" to install a helper script into your /usr/local/bin direct
 |oa:terminal|open the topmost terminal window in Alfred
 |oa:iterm|open the topmost iterm window in Alfred
 
-**Title Case Server**
+## Title Case Server
 
 This workflow goes with an upcoming tutorial on using golang with Alfred on tutplus.com. It currently runs a small web app for doing title case conversions. The workflow has these commands:
 
@@ -520,7 +560,7 @@ This workflow goes with an upcoming tutorial on using golang with Alfred on tutp
 
 It also has a hotkey specified to take the selected text, convert it, and paste it back in place. You will have to set the hotkey yourself. The go source code is included in the workflow.
 
-**Folding Text Workflow**
+## Folding Text Workflow
 
 This workflow is a work in progress. As I come up with more things I want to do with Folding Text program, I will be adding to this workflow. If there is something you would like to see added, just let me know. Most of the functions I found on the FoldingText website and compiled them here for easy use. The new bookmarking feature is the coolest thing!
 
@@ -552,7 +592,7 @@ This workflow is a work in progress. As I come up with more things I want to do 
 | ft:setsearchtag | This is used for the create tag files directory command for the Alfred browser.|
 
 
-**File Actions**
+**File Actions:**
 
 **Set Tag File Directory**
 
@@ -562,7 +602,7 @@ This sets the current directory in the Alfred Browser to the directory for creat
 
 This will take the directory in Alfred Browser and search for files with the ft extensions. Those files will be listed with the lines containing the tag set using the ft:setsearchtag command.
 
-**Time Adding Workflow**
+## Time Adding Workflow
 
  I am often needing to add up a series to times in a document. This workflow makes it very easy. Clear the accumulator, select a time value, and hit your hotkey combination you assigned in this workflow. The time will be accumulated. You can show the time in Hr:min:sec format or just plain minutes. Have fun!
 
@@ -574,10 +614,12 @@ This will take the directory in Alfred Browser and search for files with the ft 
 
 There is a hotkey you need to set for adding the currently selected time.
 
-**Zip Info**
+## Zip Info
+
 This workflow has one command:  zi:view. This will show you the zip files in your home directory's Documents folder. When you select one, it will open a Python window showing the contents of the zip file.
 
-**Text Case Converter in Swift**
+## Text Case Converter in Swift
+
 This workflow is a replication of my "tm:case" command of the Text Massager Workflow done in Swift. You have to have xCode 6 beta 6 to recompile the executable, but it should run on any system that is OS Maverick and up. Instructions for recompiling the Alfred Swift Library and the program is in the workflow directory. The one command is "tc:convert". The string given will be shown in capital case, upper case, lower case, and title case.
 
 ****
