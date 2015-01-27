@@ -3,6 +3,25 @@ MyAlfred
 
 This is where I am keeping my Alfred 2 workflows. I currently have the following workflows:
 
+## Directory Processing Workflow
+
+This workflow is for sequentially going through the contents of a directory. You can get entries for file and directory separately. The are counted independently.
+
+Set Processing Directory
+This file action only appears on directories in the Alfred browser. It will set the directory that is being processed. Both file and directory counters get reset with this action.
+
+**dp:nextfile**
+This command will put the next file in the processing directory to the clipboard and to notifications.
+
+**dp:showdir**
+This command shows the directory currently being processed.
+
+**dp:reset**
+This resets the counts for the current file and directory.
+
+**dp:nextdir**
+This command will put the next directory in the processing directory to the clipboard and to notifications.
+
 ## List Processing Workflow
 
 This workflow is for processing a text list of items separated by a single character. You set the character and the direction of the search, and the workflow will give you one at a time.
