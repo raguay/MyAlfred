@@ -135,6 +135,15 @@ This moves the current window to the left 1/3 of the screen.
 
 This moves the current window to the right 2/3 of the screen.
 
+**hs:lefthalf**
+
+This moves the current window to the left half of the screen.
+
+**hs:righthalf**
+
+This moves the current window to the right half of the screen.
+
+
 **hs:snap**
 
 This snaps the current window to the closes grid box area.
@@ -158,6 +167,9 @@ I also created a hotkey for doing Expose on FoldingText. The user can create mor
 **hs:last**
 
 This command undoes the very last window move. This assumes all window movements were done with Hammerspoon and this workflow functions.
+
+This workflow is also set up with a Remote page as well. Have fun controlling your windows from your iPad or iPhone.
+
 
 ## Alfred Editor
 
