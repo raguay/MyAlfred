@@ -318,6 +318,8 @@ Once mjolnir and it's cli program is installed, use the "mj:find mjolnir" comman
 |mj:tcaff|This toggles system caffenate.|
 |mj:leftthirds|This moves the current window to the left 1/3 of the screen.|
 |mj:rightthirds|This moves the current window to the right 2/3 of the screen.|
+|hs:lefthalf|This moves the current window to the left half of the screen.|
+|hs:righthalf|This moves the current window to the right half of the screen.|
 |mj:snap|This snaps the current window to the closes grid box area.|
 |mj:setgrid|This requires you to put the x, y for a starting position in a 3x3 matrix for the current window. Then you give the width and height. Therefore, to move the current window to the upper left most block in a 3x3 matric, you would do "mj:setgrid 0, 0, 1, 1". There is also a hotkey set to this value as an example.|
 |mj:command|Type in a command string and it will be sent to Mjolnir directly!|
@@ -325,6 +327,9 @@ Once mjolnir and it's cli program is installed, use the "mj:find mjolnir" comman
 |mj:fttoday| This focuses the window with the title "today.txt". That is my todo list for the day.|
 |mj:expose| This will list all applications. The list can be shortened by typing the name of the application. When an application is selected, it will show all of it's windows in a matrix on the screen and ask the user for the coordinates of the one to show. It will then put all the windows back to their original position and bring the one selected to the foreground. <br><br>If the application has only one window, it will simply bring it to the front. <br><br>I also created a hotkey for doing Expose on FoldingText. The user can create more in the same manner. Just be careful to get the name of the application correct! |
 |mj:last|This will move the last window moved around to it's position and size before the movement. This is a single level return. |
+
+This workflow is also set up with a Remote page as well. Have fun controlling your windows from your iPad or iPhone.
+
 
 ## Alfred URI Handler
 
