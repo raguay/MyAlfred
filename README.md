@@ -143,6 +143,23 @@ This moves the current window to the left half of the screen.
 
 This moves the current window to the right half of the screen.
 
+**hs:tophalf**
+This moves the current window to the top half of the screen.
+
+**hs:bottomhalf**
+This moves the current window to the bottom half of the screen.
+
+**hs:fullScreen**
+This moves the window to the maximum size on the screen.
+
+**hs:minimize**
+This minimizes the current window.
+
+**hs:tzoom**
+This toggles the system fullscreen on and off for the current window. This moves the window to it's own space taking up the entire screen.
+
+**hs:running**
+This will list all the running apps. You can then just select one to bring it to the front, select with alt key to hide it, select with ctrl key to unhide it, and select with the fn key to close the application.
 
 **hs:snap**
 
@@ -318,8 +335,16 @@ Once mjolnir and it's cli program is installed, use the "mj:find mjolnir" comman
 |mj:tcaff|This toggles system caffenate.|
 |mj:leftthirds|This moves the current window to the left 1/3 of the screen.|
 |mj:rightthirds|This moves the current window to the right 2/3 of the screen.|
-|hs:lefthalf|This moves the current window to the left half of the screen.|
-|hs:righthalf|This moves the current window to the right half of the screen.|
+|mj:lefthalf|This moves the current window to the left half of the screen.|
+|mj:righthalf|This moves the current window to the right half of the screen.|
+|mj:lefthalf|This moves the current window to the left half of the screen.|
+|mj:righthalf|This moves the current window to the right half of the screen.|
+|mj:tophalf|This moves the current window to the top half of the screen.|
+|mj:bottomhalf|This moves the current window to the bottom half of the screen.|
+|mj:fullScreen|This moves the window to the maximum size on the screen.|
+|mj:minimize|This minimizes the current window.|
+|mj:tzoom|This toggles the system fullscreen on and off for the current window. This moves the window to it's own space taking up the entire screen.|
+|mj:running|This will list all the running apps. You can then just select one to bring it to the front, select with alt key to hide it, select with ctrl key to unhide it, and select with the fn key to close the application.|
 |mj:snap|This snaps the current window to the closes grid box area.|
 |mj:setgrid|This requires you to put the x, y for a starting position in a 3x3 matrix for the current window. Then you give the width and height. Therefore, to move the current window to the upper left most block in a 3x3 matric, you would do "mj:setgrid 0, 0, 1, 1". There is also a hotkey set to this value as an example.|
 |mj:command|Type in a command string and it will be sent to Mjolnir directly!|
