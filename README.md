@@ -1,7 +1,84 @@
 MyAlfred
 ========
 
-This is where I am keeping my Alfred 2 workflows. I currently have the following workflows:
+This is where I am keeping my Alfred 2 workflows. It is best to download the whole repository as a zip and then double-click on the workflow you want to install into your Alfred. I currently have the following workflows:
+
+## Picat Workflow
+
+This workflow is for programing using the [Picat](http://picat-lang.org/) language. The following commands are available:
+
+**pic:install**
+This will download and install Picat in to the ~/Documents directory. It then sets up the variables to use in all the other commands.
+
+**pic:showdir**
+This shows the directory of the install Picat program to the user.
+
+**pic:setscript**
+This sets the Picat script to execute in the other commands.
+
+**pic:editscript** 
+This opens the Picat script in to the code editor that is setup with **pic:seteditor**.
+
+**pic:seteditor**
+This allows for setting the code editor to use to edit Picate scripts.
+
+**pic:run**
+This runs the currently selected Picat script.
+
+**pic:suser**
+This opens the Picat User Manual.
+
+**pic:stutorial**
+This opens the Picat Tutorial.
+
+**pic:sstarted**
+This opens the Picat Getting Started Manual.
+
+There are also three File commands to use in the Alfred Browser:
+
+**Edit Picat File**
+Allows you to edit the selected Picat file in the Alfred Browser using the editor setup in the **pic:seteditor**.
+
+**Run Picat File**
+This runs the current Picat file in the Alfred Browser.
+
+**Run Files through Picat Program**
+This will pipe the current file to the currently setup Picat script.
+
+
+## AnyBar Workflow
+
+This workflow requires the anybar application to be install. The easiest way to install is by home-brew cask:
+
+brew cask install anybar
+
+If you do not have home-brew cask installed, follow the instructions here: [HomeBrew Cask](http://caskroom.io/). If you do not have HomeBrew installed, follow the instructions here: [HomeBrew](http://brew.sh/). Then execute the above line.
+
+Once installed, you can use the features of this workflow:
+
+**anybar:launch**
+Launches anybar with optional port number.
+
+**anybar:setgraphic**
+Set the graphic for the anybar application. It will give a list of usable graphics. Start typing and the list will be narrowed down to the ones that match. Select the one and the last launched Anybar will be changed to that graphic.
+
+**anybar:setport**
+This allows you to set the port number of the AnyBar app.
+
+**anybar:setup**
+This copies the graphics I created to the ~/.AnyBar directory.
+
+There is a file action, Copy to Anybar,  that will copy a png graphic to the ~/.AnyBar directory so that it can be used with the program.
+
+There are two External Triggers: SetGraphic and Launch. The SetGraphic external trigger expects a string with the name of the graphic, a '|', and a port number. The Launch external trigger expects a UDP port number to launch the AnyBar program on.
+
+## Time Stamp Workflow
+
+This workflow is a demonstration on how to make a custom time stamp expander. 
+
+ts:stamp This causes the current time to be made into a time stamp in the format given. It then copies to clipboard.
+
+This command is also trailerable with a hotkey.
 
 ## Directory Processing Workflow
 
@@ -683,7 +760,13 @@ This workflow has one command:  zi:view. This will show you the zip files in you
 
 This workflow is a replication of my "tm:case" command of the Text Massager Workflow done in Swift. You have to have xCode 6 beta 6 to recompile the executable, but it should run on any system that is OS Maverick and up. Instructions for recompiling the Alfred Swift Library and the program is in the workflow directory. The one command is "tc:convert". The string given will be shown in capital case, upper case, lower case, and title case.
 
-****
+---
+
+## Alfred Themes
+
+I have two themes in this repository: Wild-Cherry Dark and Wild-Cherry Light. These were adopted from [Wild-Cherry](https://github.com/mashaal/wild-cherry).
+
+---
 
 Please let me know if you have any problems, suggestions, or commits. These are documented more fully on my web site <a href="http://customct.com">http://customct.com</a>.
 
