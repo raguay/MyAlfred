@@ -176,6 +176,10 @@ First off, download Hammerspoon from https://github.com/Hammerspoon/hammerspoon/
 
 Configure Hammerspoon with the configuration file that this workflow needs. The original is backed up into the users home directory as hs.orig.
 
+**hs:upgrade**
+
+This just installs the alfred.lua file to the Hammerspoon directory. This effectively upgrades all functionality without messing with user created functionality.
+
 **hs:reload**
 
 This tells Hammerspoon to reload the configuration file.
@@ -202,7 +206,7 @@ This nudges the current window to the right.
 
 **hs:tcaff**
 
-This toggles system caffenate.
+This toggles system caffenate. If the **AnyBar** workflow is installed in Alfred and the AnyBar program installed, a menu bar indicator for caffienate will appear. Gray "zzz" means that caffienate is not active, while red means active.
 
 **hs:leftthirds**
 
