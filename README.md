@@ -3,6 +3,26 @@ MyAlfred
 
 This is where I am keeping my Alfred 2 workflows. It is best to download the whole repository as a zip and then double-click on the workflow you want to install into your Alfred. I currently have the following workflows:
 
+## Haskell Text Converter Workflow
+
+This workflow demonstrates the Haskell Alfred Library. The workflow allows text to be converted to different formats. The following commands are:
+
+**ht:conv**
+
+This command takes a string in the Alfred Prompt. You then pick the type of conversion you want. The result is pushed on to the clipboard.
+
+**ht:start**
+
+This command starts a dedicated web server for performing the text conversion.
+
+**ht:stop**
+
+This command closes the dedicated web server.
+
+There is a **hotkey** for numbering the lines of text in the clipboard.
+
+There is also an external trigger for taking text from the clipboard and allowing the user to select a converter. There is a **hotkey** for triggering that external trigger also that takes the current selection and puts it into the clipboard.
+
 ## Picat Workflow
 
 This workflow is for programing using the [Picat](http://picat-lang.org/) language. The following commands are available:
