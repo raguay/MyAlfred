@@ -410,6 +410,13 @@ Same as "Create a File", but creates a directory instead.
 
 More coming in the future!
 
+Copy Relative Home Path
+
+This file action calculates the relative path from the user’s home directory and copies it to the clipboard.
+
+Paste Relative Home Path
+
+This file action calculates the relative path from the user’s home directory and copies it to the clipboard. It will then paste the relative path to the topmost application.
 
 ## Dropzone 3 Workflow
 
