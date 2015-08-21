@@ -36,7 +36,7 @@ This shows the directory of the install Picat program to the user.
 **pic:setscript**
 This sets the Picat script to execute in the other commands.
 
-**pic:editscript** 
+**pic:editscript**
 This opens the Picat script in to the code editor that is setup with **pic:seteditor**.
 
 **pic:seteditor**
@@ -94,7 +94,7 @@ There are two External Triggers: SetGraphic and Launch. The SetGraphic external 
 
 ## Time Stamp Workflow
 
-This workflow is a demonstration on how to make a custom time stamp expander. 
+This workflow is a demonstration on how to make a custom time stamp expander.
 
 ts:stamp This causes the current time to be made into a time stamp in the format given. It then copies to clipboard.
 
@@ -396,25 +396,51 @@ The keyword "cm:fav" is used to view saved directories, remove one, go to one in
 
 ## Alfred Browser Toolbox
 
-The only keyword is "ff" for "Find a Folder". It is a way to lookup a folding in the Alfred browser or in Finder. Very handy.
+### Keywords
 
-There are two Alfred browser actions:
+**ff**
 
-Create a File
+It is a way to lookup a folding in the Alfred browser or in Finder. Very handy.
+
+**ab:newfile**
+
+Creates a new file in the directory of the topmost Finder or Path Finder window.
+
+**ab:newdir**
+
+Creates a new directory in the directory of the topmost Finder or Path Finder window.
+
+**ab:open**
+
+Opens the URL, URI, or file given using the Mac OS X open terminal command. This has a hot key as well to open the current selection with "open".
+
+**ab:pdf**
+
+This is a file filter for PDF files. I have many and this really makes finding them easy.
+
+### Alfred Browser Actions
+
+**Get File Name**
+
+This gets the name of the file selected in Alfred Browser and puts it into the clipboard.
+
+**Get File Size**
+
+This gets the file size of the file selected in the Alfred Browser and puts it into the clipboard.
+
+**Create a File**
 
 Simply creates a file in the directory this file action is ran on. It will ask you for the name and then create it.
 
-Create a Directory
+**Create a Directory**
 
 Same as "Create a File", but creates a directory instead.
 
-More coming in the future!
-
-Copy Relative Home Path
+**Copy Relative Home Path**
 
 This file action calculates the relative path from the user’s home directory and copies it to the clipboard.
 
-Paste Relative Home Path
+**Paste Relative Home Path**
 
 This file action calculates the relative path from the user’s home directory and copies it to the clipboard. It will then paste the relative path to the topmost application.
 
