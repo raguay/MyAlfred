@@ -3,6 +3,20 @@ MyAlfred
 
 This is where I am keeping my Alfred 2 workflows. It is best to download the whole repository as a zip and then double-click on the workflow you want to install into your Alfred. I currently have the following workflows:
 
+## DockShelf Workflow
+
+This workflow is for automating the [DockShelf](http://www.thealchemistguild.com/dockshelf/) program. The following items are defined:
+
+###Commands:
+
+**“ds:space”**
+This command will show a list of workspaces currently defined. You can narrow the list by typing part of a name. Selecting one causes DockShelf to switch to that workspace.
+
+###External Triggers:
+
+**Focus Named Workspace**
+This external trigger will switch to the workspace given.
+
 ## Template Workflow
 
 This workflow allows you to create templates with Handlebar syntax. To use the workflow, you have to have Node.js installed first. I recommend using [Homebrew](http://brew.io) to install it.
