@@ -1,5 +1,4 @@
-MyAlfred
-========
+# MyAlfred
 
 This is where I am keeping my Alfred 2 workflows. It is best to download the whole repository as a zip and then double-click on the workflow you want to install into your Alfred. I currently have the following workflows:
 
@@ -46,7 +45,6 @@ This command creates a helper named “<name>” with the expanding text of “<
 
 **{{clipboard}}**
 This helper command places the current clipboard contents at the point in the template.
-
 
 The following data expansions are defined as well:
 
@@ -147,7 +145,6 @@ This runs the current Picat file in the Alfred Browser.
 
 **Run Files through Picat Program**
 This will pipe the current file to the currently setup Picat script.
-
 
 ## AnyBar Workflow
 
@@ -273,7 +270,7 @@ This is a direct port of my Mjolnir Workflow.
 
 This workflow is for running scripts using Hammerspoon to control your windows. This is just a sample of the things that can be done. Follow this layout and you can do many neat things with Hammerspoon.
 
-First off, download Hammerspoon from https://github.com/Hammerspoon/hammerspoon/releases/latest.  Once installed, reload Hammerspoon and run the "hs:install" to set the configuration file this workflow expects. After that, everything should just work.
+First off, download Hammerspoon from <https://github.com/Hammerspoon/hammerspoon/releases/latest>.  Once installed, reload Hammerspoon and run the "hs:install" to set the configuration file this workflow expects. After that, everything should just work.
 
 **hs:install**
 
@@ -371,7 +368,6 @@ This command undoes the very last window move. This assumes all window movements
 
 This workflow is also set up with a Remote page as well. Have fun controlling your windows from your iPad or iPhone.
 
-
 ## Alfred Editor
 
 This is a simple editor that makes use of **Node Webkit Toolbox** to run. Therefore, you need to install that workflow first. After installing this workflow, you need to execute **ae:install** to install the data files and the help files into their proper location. You will have a command line program called **ae** you can use to open files from the command line.
@@ -426,13 +422,13 @@ The workflow provides the following commands:
 
     /usr/bin/osascript -e "tell application \"Alfred 2\" to run trigger \"RunNodeWKDirectory\" in workflow \"com.customct.NodeWebkit\" with argument \"$thisDir/help\""
 
-
 <p>The directory path given in the argument tells Node Webkit where to load the program from. It is set with the <code>pwd</code> command.</p>
 
 <p>There will be more tutorials and hacks using this workflow on my website <a href="http://customct.com">Custom Computer Tools</a>.</p>
 
 ## Peppermint Toolbox
-This workflow is for using the Peppermint code editor. You can learn more about Peppermint at http://osxpeppermint.com/.
+
+This workflow is for using the Peppermint code editor. You can learn more about Peppermint at <http://osxpeppermint.com/>.
 
 The commands are:
 
@@ -456,7 +452,8 @@ Edit the selected file in a MacVim gui applicaiton.
 Also, I added edit with MacVim in the Alfred Browser. There are hotkeys you can define as well.
 
 ## Slap Toolbox
-These commands are for working with the slap terminal editor easier. You can learn more about slap at https://github.com/slap-editor/slap
+
+These commands are for working with the slap terminal editor easier. You can learn more about slap at <https://github.com/slap-editor/slap>
 
 **slap:edititerm**
   Gets the file in Finder or Pathfinder and opens it in iTerm using slap.
@@ -465,7 +462,7 @@ These commands are for working with the slap terminal editor easier. You can lea
   Gets the file in Finder or PathFinder and opens it in Terminal using slap.
 
 **slap:install**
-  Runs the npm install for slap. It is assumed that node and npm are already installed. The best way to install node is with HomeBrew (http://brew.io).
+  Runs the npm install for slap. It is assumed that node and npm are already installed. The best way to install node is with HomeBrew (<http://brew.io>).
 
 There is also an edit with Slap in the Alfred Browser. A HotKey is setup to take the current OS X selection and open it in slap.
 
@@ -535,61 +532,61 @@ This workflow is for easily getting to the Dropzone 3 actions directory in Alfre
 
 This workflow is for running scripts using Mjolnir to control your windows. This is just a sample of the things that can be done. Follow this layout and you can do many neat things with Mjolnir.
 
-First off, download Mjolnir from https://github.com/mjolnir-io/mjolnir.git. That site also tells how to get started. To install the needed modules and configuration file, you will need to run the "mj:install" command. This will also install the cli program called "mjolnir".
+First off, download Mjolnir from <https://github.com/mjolnir-io/mjolnir.git>. That site also tells how to get started. To install the needed modules and configuration file, you will need to run the "mj:install" command. This will also install the cli program called "mjolnir".
 
 Once mjolnir and it's cli program is installed, use the "mj:find mjolnir" command to set the path to the executable. After this step is done, all the following commands are available to use.
 
-| Command | Description |
-|---|---|
-|mj:install|This will install some modules that is used in the configuration file for this workflow. It will also install a default configuration file for mjolnir. If you already have one, move it to a temporary location, run this command, and then copy your function to the configuration file. This should be the second command you run to get this workflow running. Since it does download from the web, it will take a while to complete.|
-|mj:updateinit | This command just updates the init.lua file to the new one for the workflow. It does not try to update the modules.|
-|mj:reload|This tells mjolnir to reload the configuration file.|
-|mj:open|This will bring the Mjolnir console to the front.|
-|mj:nup|This nudges the current window up.|
-|mj:ndown|This nudges the current window down.|
-|mj:nleft|This nudges the current window to the left.|
-|mj:nright|This nudges the current window to the right.|
-|mj:tcaff|This toggles system caffenate.|
-|mj:leftthirds|This moves the current window to the left 1/3 of the screen.|
-|mj:rightthirds|This moves the current window to the right 2/3 of the screen.|
-|mj:lefthalf|This moves the current window to the left half of the screen.|
-|mj:righthalf|This moves the current window to the right half of the screen.|
-|mj:lefthalf|This moves the current window to the left half of the screen.|
-|mj:righthalf|This moves the current window to the right half of the screen.|
-|mj:tophalf|This moves the current window to the top half of the screen.|
-|mj:bottomhalf|This moves the current window to the bottom half of the screen.|
-|mj:fullScreen|This moves the window to the maximum size on the screen.|
-|mj:minimize|This minimizes the current window.|
-|mj:tzoom|This toggles the system fullscreen on and off for the current window. This moves the window to it's own space taking up the entire screen.|
-|mj:running|This will list all the running apps. You can then just select one to bring it to the front, select with alt key to hide it, select with ctrl key to unhide it, and select with the fn key to close the application.|
-|mj:snap|This snaps the current window to the closes grid box area.|
-|mj:setgrid|This requires you to put the x, y for a starting position in a 3x3 matrix for the current window. Then you give the width and height. Therefore, to move the current window to the upper left most block in a 3x3 matric, you would do "mj:setgrid 0, 0, 1, 1". There is also a hotkey set to this value as an example.|
-|mj:command|Type in a command string and it will be sent to Mjolnir directly!|
-|mj:ftmove| This puts every window for FoldingText to the left half of the screen. |
-|mj:fttoday| This focuses the window with the title "today.txt". That is my todo list for the day.|
-|mj:expose| This will list all applications. The list can be shortened by typing the name of the application. When an application is selected, it will show all of it's windows in a matrix on the screen and ask the user for the coordinates of the one to show. It will then put all the windows back to their original position and bring the one selected to the foreground. <br><br>If the application has only one window, it will simply bring it to the front. <br><br>I also created a hotkey for doing Expose on FoldingText. The user can create more in the same manner. Just be careful to get the name of the application correct! |
-|mj:last|This will move the last window moved around to it's position and size before the movement. This is a single level return. |
+| Command        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| mj:install     | This will install some modules that is used in the configuration file for this workflow. It will also install a default configuration file for mjolnir. If you already have one, move it to a temporary location, run this command, and then copy your function to the configuration file. This should be the second command you run to get this workflow running. Since it does download from the web, it will take a while to complete.                                                                                                                                                                                             |
+| mj:updateinit  | This command just updates the init.lua file to the new one for the workflow. It does not try to update the modules.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| mj:reload      | This tells mjolnir to reload the configuration file.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| mj:open        | This will bring the Mjolnir console to the front.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| mj:nup         | This nudges the current window up.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| mj:ndown       | This nudges the current window down.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| mj:nleft       | This nudges the current window to the left.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| mj:nright      | This nudges the current window to the right.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| mj:tcaff       | This toggles system caffenate.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| mj:leftthirds  | This moves the current window to the left 1/3 of the screen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| mj:rightthirds | This moves the current window to the right 2/3 of the screen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| mj:lefthalf    | This moves the current window to the left half of the screen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| mj:righthalf   | This moves the current window to the right half of the screen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| mj:lefthalf    | This moves the current window to the left half of the screen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| mj:righthalf   | This moves the current window to the right half of the screen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| mj:tophalf     | This moves the current window to the top half of the screen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| mj:bottomhalf  | This moves the current window to the bottom half of the screen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| mj:fullScreen  | This moves the window to the maximum size on the screen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| mj:minimize    | This minimizes the current window.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| mj:tzoom       | This toggles the system fullscreen on and off for the current window. This moves the window to it's own space taking up the entire screen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| mj:running     | This will list all the running apps. You can then just select one to bring it to the front, select with alt key to hide it, select with ctrl key to unhide it, and select with the fn key to close the application.                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| mj:snap        | This snaps the current window to the closes grid box area.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| mj:setgrid     | This requires you to put the x, y for a starting position in a 3x3 matrix for the current window. Then you give the width and height. Therefore, to move the current window to the upper left most block in a 3x3 matric, you would do "mj:setgrid 0, 0, 1, 1". There is also a hotkey set to this value as an example.                                                                                                                                                                                                                                                                                                               |
+| mj:command     | Type in a command string and it will be sent to Mjolnir directly!                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| mj:ftmove      | This puts every window for FoldingText to the left half of the screen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| mj:fttoday     | This focuses the window with the title "today.txt". That is my todo list for the day.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| mj:expose      | This will list all applications. The list can be shortened by typing the name of the application. When an application is selected, it will show all of it's windows in a matrix on the screen and ask the user for the coordinates of the one to show. It will then put all the windows back to their original position and bring the one selected to the foreground. <br><br>If the application has only one window, it will simply bring it to the front. <br><br>I also created a hotkey for doing Expose on FoldingText. The user can create more in the same manner. Just be careful to get the name of the application correct! |
+| mj:last        | This will move the last window moved around to it's position and size before the movement. This is a single level return.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
 This workflow is also set up with a Remote page as well. Have fun controlling your windows from your iPad or iPhone.
-
 
 ## Alfred URI Handler
 
 This workflow has one command "au:install". Once you run it, a URI handler for Alfred will be installed. This is used to trigger external triggers in any workflow. The format is:
 
-alfreduri://com.apple.AppleScript.AlfredURIhandler?wf=&lt;workflow Bundle ID&gt;&amp;arg=&lt;arguments&gt;&amp;ext=&lt;external trigger name&gt;
+alfreduri://com.apple.AppleScript.AlfredURIhandler?wf=<workflow Bundle ID>&arg=<arguments>&ext=<external trigger name>
 
 The arguments should be URI encoded (ie: no spaces, but %20 instead). If you update the workflow, you have to re-apply the handler. Also, do not delete the workflow or the functionality will be removed.
 
 You can also launch a search in Alfred with:
 
-alfreduri://com.apple.AppleScript.AlfredURIhandler?search=&lt;search query&gt;
+alfreduri://com.apple.AppleScript.AlfredURIhandler?search=<search query>
 
 The search query needs to be URI encoded as well.
 
 ## Alfred Time Keeper
 
 A time tracking extension that allows for any number of projects and tracking the time between them. Still early stage, but very useable. It also has a basic graphical viewing of work hours with a calendar for lookup. I have started recreating some of the PHP scripts as full go language programs. Please let me know if you have any problems. The following keywords are used:
+
 <table>
 <tr><td>atk:addproject</td><td>This allows you to create a new project</td></tr>
 <tr><td>atk:project</td><td>This allows you to set the current project</td></tr>
@@ -604,6 +601,7 @@ A time tracking extension that allows for any number of projects and tracking th
 ## Name Sequencer
 
 This workflow allows you to sequence through some file names. You set the base name and extension. It will increment the count and place it in the clipboard and Growl it. If there is a file name in the clipboard, you can also just increment the count for the file name.
+
 <table>
 <tr><td>setname</td><td>This will set the base name for creating filenames.</td></tr>
 <tr><td>setext</td><td>This will set the extension for the filenames created.</td></tr>
@@ -623,6 +621,7 @@ This workflow is for compressing png images to a smaller size with scaling. You 
 ## Next Item
 
 This little workflow allows you to sequentially step through items in multiple list files. You use the "Next Item: Set File" file action on the file containing a list of items: One item per line. For example, a list of urls; one per line. Then the hot key (you will have to set yourself since mine being <alt><command>n will be erased) will take the next item from the specified first list and copy it to the clipboard and to a notification. If you view all lists before the first list, you will see each corresponding item for each list. The counter is only incremented after passing the item from the first list.
+
 <table>
 <tr><td>"ni:move #"</td><td>This will move the last set file to the # list. If you do not move the file items to a list number, then it will not get sent to you.</td></tr>
 
@@ -646,30 +645,30 @@ Setting a new list will clear the count. The file specified is copied to a work 
 
 I am often changing text around to different formats in large quantities. So, I made a workflow for keeping all of them. I call it text massagers because you are "massaging" the text with the script. You can use this as your template for your own massagers. All of these scripts takes the item from the clipboard, massages it, and places back into the clipboard while showing you the results.
 
-| Command | Description |
-|---|---|
-|&lt;alt&gt;&lt;command&gt;m  | Expects a markdown anchor line in the clipboard and converts it to a HTML anchor within a list item.|
-|&lt;alt&gt;&lt;command&gt;t  | Fixes a time into HH:MM:SS format no matter what it was before.|
-|&lt;shift&gt;&lt;command&gt;” | Takes the current selection and passes it to the “tm:select” command for selecting the text massager from a list. The list will show the resulting string. It will then perform the selected “massage” to the text and copy it to the clipboard and back into the document it was grabbed from if possible.|
-|tm:select|Takes the string on the Alfred Prompt and runs it through the different massagers and shows the output in the list. When the user selects one of the massagers, it will copy the resulting string to the clipboard and to the document that is open.|
-|&lt;shift&gt;&lt;alt&gt;&quot;| Takes the current selection and passes it to the “tm:selectn” command for selecting the text massager from a list. It will then perform the selected “massage” to the text and copy it to the clipboard and back into the document it was grabbed from if possible.|
-|tm:selectn|Same as "tm:select" except for not displaying the results in the list. This is for slower computers.|
+| Command           | Description                                                                                                                                                                                                                                                                                                 |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <alt><command>m   | Expects a markdown anchor line in the clipboard and converts it to a HTML anchor within a list item.                                                                                                                                                                                                        |
+| <alt><command>t   | Fixes a time into HH:MM:SS format no matter what it was before.                                                                                                                                                                                                                                             |
+| <shift><command>” | Takes the current selection and passes it to the “tm:select” command for selecting the text massager from a list. The list will show the resulting string. It will then perform the selected “massage” to the text and copy it to the clipboard and back into the document it was grabbed from if possible. |
+| tm:select         | Takes the string on the Alfred Prompt and runs it through the different massagers and shows the output in the list. When the user selects one of the massagers, it will copy the resulting string to the clipboard and to the document that is open.                                                        |
+| <shift><alt>"     | Takes the current selection and passes it to the “tm:selectn” command for selecting the text massager from a list. It will then perform the selected “massage” to the text and copy it to the clipboard and back into the document it was grabbed from if possible.                                         |
+| tm:selectn        | Same as "tm:select" except for not displaying the results in the list. This is for slower computers.                                                                                                                                                                                                        |
 
 ## TextSoap Cleaners
 
 This workflow interfaces with [TextSoap](http://www.unmarked.com/textsoap/), a great text processing program. I now use it more than awk! The following are the keywords defined:
 
-| Command | Description |
-|---|---|
-| tc:clean | This keyword will present a list of all previously used cleaners to pick from. Start typing to narrow down the list. When you hit enter on an entry, it will perform that cleaner on the clipboard. If you hold down the fn key, it will delete that cleaner from the list of preferred cleaners. You can set a hotkey to repeat the last ran cleaner on the clipboard. |
-| tc:full | This keyword will show all available cleaners obtained from the tc:getcleaners. The cleaner you select will be performed on the clipboard and the cleaner will be saved into your list of preferred cleaners. |
-| tc:fulla | This keyword is the same as tc:full, but will append the results to the topmost application.  You can set a hotkey to perform this on the current selection as well.|
-| tc:seteditor | Allows you to set the text editor for editing the list of preferred cleaners. |
-| tc:editlist | Allows you to edit the list of preferred cleaners using the editor already setup. |
-| tc:getcleaners | This will query TextSoap for the list of cleaners it has. You should do this each time you create new cleaners you want to use with this workflow. |
-| tc:addcleaner | This will set the string given into the list of preferred cleaners. |
-| tc:count | This will count the number of lines, words, and characters in the clipboard. If a string is passed with it, it will count that string. You can set a hotkey to count the current selection. |
-| tc:loadpopclipext | This will load the popclip extension for executing the last cleaner on the highlighted text. |
+| Command           | Description                                                                                                                                                                                                                                                                                                                                                             |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| tc:clean          | This keyword will present a list of all previously used cleaners to pick from. Start typing to narrow down the list. When you hit enter on an entry, it will perform that cleaner on the clipboard. If you hold down the fn key, it will delete that cleaner from the list of preferred cleaners. You can set a hotkey to repeat the last ran cleaner on the clipboard. |
+| tc:full           | This keyword will show all available cleaners obtained from the tc:getcleaners. The cleaner you select will be performed on the clipboard and the cleaner will be saved into your list of preferred cleaners.                                                                                                                                                           |
+| tc:fulla          | This keyword is the same as tc:full, but will append the results to the topmost application.  You can set a hotkey to perform this on the current selection as well.                                                                                                                                                                                                    |
+| tc:seteditor      | Allows you to set the text editor for editing the list of preferred cleaners.                                                                                                                                                                                                                                                                                           |
+| tc:editlist       | Allows you to edit the list of preferred cleaners using the editor already setup.                                                                                                                                                                                                                                                                                       |
+| tc:getcleaners    | This will query TextSoap for the list of cleaners it has. You should do this each time you create new cleaners you want to use with this workflow.                                                                                                                                                                                                                      |
+| tc:addcleaner     | This will set the string given into the list of preferred cleaners.                                                                                                                                                                                                                                                                                                     |
+| tc:count          | This will count the number of lines, words, and characters in the clipboard. If a string is passed with it, it will count that string. You can set a hotkey to count the current selection.                                                                                                                                                                             |
+| tc:loadpopclipext | This will load the popclip extension for executing the last cleaner on the highlighted text.                                                                                                                                                                                                                                                                            |
 
 There are also three places to set your hotkeys: one for doing a character/word/line count of your selection, one for evoking the last cleaner on selected text, and one for choosing from the full list of cleaner to apply on the currently selected text.
 
@@ -680,6 +679,7 @@ This workflow gives some added features for ExpanDrive. You can use the hotkey "
 ## s3cmdToolkit
 
 This workflow gives the ability to upload files to Amazon S3 using the s3cmd commandline function. You can download the s3cmd utility at <a href="http://s3tools.org/s3cmd">http://s3tools.org/s3cmd</a>. The workflow currently contains a copy of the s3cmd tool. You will need to open a terminal to the directory that contains the workflow to set your s3 credentials. Please see the directions at <a href="http://s3tools.org/s3cmd">http://s3tools.org/s3cmd</a> to know how to set it up. Here are the currently supported keywords and file actions:
+
 <table>
 <tr><td>"s3c:copydir"</td><td>This keywork allows you to pick a directory that contains videos (mp4|mov). The videos will be copied to the corresponding directory on s3. Make sure to set the base directory using "s3c:base".</td></tr>
 <tr><td>"s3c:base"</td><td>You use this keyword to set the base directory for s3. It should be the format of "s3://{bucket}/directory/..". It has to be set to "s3://{bucket name}" as the minimum.</td></tr>
@@ -713,38 +713,38 @@ This workflow if for taking notes. It was designed for Calca, but can be used wi
 
 This workflow is for working with todo lists using TaskPaper or FoldingText. But, you can set any other editor you want as well. Since TaskPaper and FoldingText uses plain text files for everything, it is easy to write scripts to add functionality that the program does not have. So far, I have the following keywords defined:
 
-| Command | Description |
-| --------:| ---------- |
-| t:settodo | This command allows you to set the directory for your todos. It will setup the supporting files and sub-directories as  well. This is the first action to perform with this workflow. |
-| t:createtodaytodo | This command will take the everyday, weekly, monthly, and dated todos and combine them to the left over todos from the last time you created todos. It will also archive the finished todos. Todos that are repeated from the dated category are reset according to the repeat pattern.|
-| t:showtoday | This command will open todays (or the most current) todo list in TaskPaper.  |
-| t:showyesterday | This command will open yesterdays (or the one before the most current) todo list in TaskPaper.  |
-| t:showfinished | This command will open the archived done tasks in TaskPaper.  |
-| t:addmonthlytodo | This command will ask for the day of the month and the task. It will then place that in the monthly todo  directory for that day. When a new todo list is created, then it will pull in that days tasks. |
-| t:addeveryday | This adds a task to the everyday task list. Every task placed in this list will be added to the current todo list everytime it is created.|
-| t:addweekdaytask | This command will ask for the day of the week and the task. It will  then place that it in the weekly todo directory for that day of the week. When a new todo list is created, then it will pull in that days tasks. |
-| t:doing | This creates a new dated entry for the current journal. It will ask which journal to place the entry into. The standard  doing.txt journal will automatically be created. |
-| t:showdoing | This opens the current doing journal in TaskPaper.  |
-| t:showprojects | This opens the projects task file in TaskPaper. This is for ongoing projects and their tasks.  |
-| t:sortdone | This command takes the topmost TaskPaper list and sorts all of the done tag entries to the bottom.  |
-| t:seteditor | This command is for setting the text editor to use.  |
-| t:newjournal | This command will allow you to create new journal files.  |
-| t:showjournal | This command is for opening a journal in the editor. It will ask which journal and give you the current list of  journals. |
-| t:settz | This command is for setting the time zone. A list of time zones will be given and you select the one you are in.  |
-| t:showtz | This command will show the currently set time zone.  |
-| t:next | This finds the tag @next, marks that task done, and adds it to the next task. |
-| t:adddatedtask | This allows you to add a task on a particular date that can repeat also. You can repeat by days, weeks, months, or years. It also shows all dated tasks and allows for deleting them. |
-| t:managemonthly | This allows you to pick a monthly task and edit the file or delete the file. |
-| t:manageweekly | This allows you to pick a weekly task to edit or delete. |
-| t:editeverydaytask | This allows you to edit the everyday task file. |
+|            Command | Description                                                                                                                                                                                                                                                                             |
+| -----------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|          t:settodo | This command allows you to set the directory for your todos. It will setup the supporting files and sub-directories as  well. This is the first action to perform with this workflow.                                                                                                   |
+|  t:createtodaytodo | This command will take the everyday, weekly, monthly, and dated todos and combine them to the left over todos from the last time you created todos. It will also archive the finished todos. Todos that are repeated from the dated category are reset according to the repeat pattern. |
+|        t:showtoday | This command will open todays (or the most current) todo list in TaskPaper.                                                                                                                                                                                                             |
+|    t:showyesterday | This command will open yesterdays (or the one before the most current) todo list in TaskPaper.                                                                                                                                                                                          |
+|     t:showfinished | This command will open the archived done tasks in TaskPaper.                                                                                                                                                                                                                            |
+|   t:addmonthlytodo | This command will ask for the day of the month and the task. It will then place that in the monthly todo  directory for that day. When a new todo list is created, then it will pull in that days tasks.                                                                                |
+|      t:addeveryday | This adds a task to the everyday task list. Every task placed in this list will be added to the current todo list everytime it is created.                                                                                                                                              |
+|   t:addweekdaytask | This command will ask for the day of the week and the task. It will  then place that it in the weekly todo directory for that day of the week. When a new todo list is created, then it will pull in that days tasks.                                                                   |
+|            t:doing | This creates a new dated entry for the current journal. It will ask which journal to place the entry into. The standard  doing.txt journal will automatically be created.                                                                                                               |
+|        t:showdoing | This opens the current doing journal in TaskPaper.                                                                                                                                                                                                                                      |
+|     t:showprojects | This opens the projects task file in TaskPaper. This is for ongoing projects and their tasks.                                                                                                                                                                                           |
+|         t:sortdone | This command takes the topmost TaskPaper list and sorts all of the done tag entries to the bottom.                                                                                                                                                                                      |
+|        t:seteditor | This command is for setting the text editor to use.                                                                                                                                                                                                                                     |
+|       t:newjournal | This command will allow you to create new journal files.                                                                                                                                                                                                                                |
+|      t:showjournal | This command is for opening a journal in the editor. It will ask which journal and give you the current list of  journals.                                                                                                                                                              |
+|            t:settz | This command is for setting the time zone. A list of time zones will be given and you select the one you are in.                                                                                                                                                                        |
+|           t:showtz | This command will show the currently set time zone.                                                                                                                                                                                                                                     |
+|             t:next | This finds the tag @next, marks that task done, and adds it to the next task.                                                                                                                                                                                                           |
+|     t:adddatedtask | This allows you to add a task on a particular date that can repeat also. You can repeat by days, weeks, months, or years. It also shows all dated tasks and allows for deleting them.                                                                                                   |
+|    t:managemonthly | This allows you to pick a monthly task and edit the file or delete the file.                                                                                                                                                                                                            |
+|     t:manageweekly | This allows you to pick a weekly task to edit or delete.                                                                                                                                                                                                                                |
+| t:editeverydaytask | This allows you to edit the everyday task file.                                                                                                                                                                                                                                         |
 
 ## Alfred Bible
 
-This workflow will request Bible passages from the "Ephesians 4:14" website:  http://www.4-14.org.uk/xml-bible-web-service-api.  Access to this API is currently free. This workflow will request the given verse from Alfred edit line or from the current OS X selection, request the verse(s), and return it in the clipboard and a notification. You can then paste it where ever you want. If you use the hotkey to search for the selected verse, it will automatically replace it with the text. There is also a hotkey to paste both versions: English and Thai. It now translates the English Bible book names to Thai. I will be adding more functionality to this workflow in the future and eventually have a full Bible study app. Let me know what functions you need.
+This workflow will request Bible passages from the "Ephesians 4:14" website:  <http://www.4-14.org.uk/xml-bible-web-service-api>.  Access to this API is currently free. This workflow will request the given verse from Alfred edit line or from the current OS X selection, request the verse(s), and return it in the clipboard and a notification. You can then paste it where ever you want. If you use the hotkey to search for the selected verse, it will automatically replace it with the text. There is also a hotkey to paste both versions: English and Thai. It now translates the English Bible book names to Thai. I will be adding more functionality to this workflow in the future and eventually have a full Bible study app. Let me know what functions you need.
 
 ## OctoPOW
 
-This workflow assumes you have octopuses and pow installed on your computer with each octopress site linked into the ~/.pow directory. The POW workflow (https://github.com/phallstrom/AlfredPow) is a great compliment to this workflow and is called by the preview function. First, set up your editor with "octopow:editor". Then, set you current POW project with "octopow". You can create/edit/delete posts with "octopow:post". You can generate your site and preview it in POW using "octopow:preview". You can then deploy you changes with "octopow:deploy". This workflow assumes you have already setup your Octopress site and POW programs on your system. More to come!
+This workflow assumes you have octopuses and pow installed on your computer with each octopress site linked into the ~/.pow directory. The POW workflow (<https://github.com/phallstrom/AlfredPow>) is a great compliment to this workflow and is called by the preview function. First, set up your editor with "octopow:editor". Then, set you current POW project with "octopow". You can create/edit/delete posts with "octopow:post". You can generate your site and preview it in POW using "octopow:preview". You can then deploy you changes with "octopow:deploy". This workflow assumes you have already setup your Octopress site and POW programs on your system. More to come!
 
 ## Run Chrome with Accessibility
 
@@ -771,7 +771,9 @@ If you invoke the keyword “sp:” or if you press the hotkey without a selecti
 This workflow has commands for [DwellClick from Pilotmoon](https://pilotmoon.com/dwellclick/). You can:
 
 | Command | Description |
-|---|---|
+| ------- | ----------- |
+|         |             |
+
 dc:enable   | Enable DwellClick
 dc:disable  | Disable DwellClick
 dc:action   | Performs the action selected. This is a script filter that will list all possible actions. If the command key is pressed, it delays the action for the next dwell click. If the function key is pressed, then the action is stored for use with the first hotkey action.
@@ -782,12 +784,14 @@ The first hotkey action is for performing the stored action. The second is an ex
 
 This is a toolbox of functions for working with the [Fish Shell](http://fishshell.com/).  You can install fish shell with homebrew:
 
-	brew install fish
+    brew install fish
 
 Currently, the functions are:
 
 | Command | Description |
-|---|---|
+| ------- | ----------- |
+|         |             |
+
 f:seteditor  |  Set the code editor to use
 f:editfunction |   Edit a Fish function. It will show a list of possible functions to edit. If you press FN key and select a function, that function will be deleted.
 f:editconfig  | Edit the Fish Configuration file.
@@ -801,17 +805,17 @@ This workflow is the translation of Brett Terpstra's LaunchBar script for Alfred
 
 ## Powerline Toolbox
 
-This is a toolbox of functions for working with [Powerline](). Currently, the commands are:
+This is a toolbox of functions for working with [Powerline](<>). Currently, the commands are:
 
-| Command | Description |
-| --- | --- |
-| pl:loc | Gives the location of the pip installation of Powerline. It will open it in Alfred, in Finder if the ctrl key is pressed, or in Terminal if the cmd key is pressed. |
-| pl:doc | Will open the documentation for Powerline. |
-| pl:fonts | Will open the fonts download page for Powerline. |
-| pl:github | Will open the GitHub page for Powerline. |
-| pl:editor | Will allow you to set the text editor for editing Powerline configuration files. |
-| pl:conf | Will allow you to browse the Powerline configuration directory and edit the files and create new files. |
-| pl:goconf | This will open the configuration directory in Alfred or in Finder if the cmd key is pressed. |
+| Command   | Description                                                                                                                                                         |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| pl:loc    | Gives the location of the pip installation of Powerline. It will open it in Alfred, in Finder if the ctrl key is pressed, or in Terminal if the cmd key is pressed. |
+| pl:doc    | Will open the documentation for Powerline.                                                                                                                          |
+| pl:fonts  | Will open the fonts download page for Powerline.                                                                                                                    |
+| pl:github | Will open the GitHub page for Powerline.                                                                                                                            |
+| pl:editor | Will allow you to set the text editor for editing Powerline configuration files.                                                                                    |
+| pl:conf   | Will allow you to browse the Powerline configuration directory and edit the files and create new files.                                                             |
+| pl:goconf | This will open the configuration directory in Alfred or in Finder if the cmd key is pressed.                                                                        |
 
 ## Open in Alfred
 
@@ -821,20 +825,20 @@ You type "oa:install" to install a helper script into your /usr/local/bin direct
 
    Then you can use these commands:
 
-| Command | Description |
-|---|---|
-|oa:terminal|open the topmost terminal window in Alfred
-|oa:iterm|open the topmost iterm window in Alfred
+| Command     | Description                                |
+| ----------- | ------------------------------------------ |
+| oa:terminal | open the topmost terminal window in Alfred |
+| oa:iterm    | open the topmost iterm window in Alfred    |
 
 ## Title Case Server
 
 This workflow goes with an upcoming tutorial on using golang with Alfred on tutplus.com. It currently runs a small web app for doing title case conversions. The workflow has these commands:
 
-| Command | Description |
-|---|---|
-|tcs:launch|This will start the title case server on port 9910|
-|tcs:stop|This will stop the title case server|
-|tcs:convert|This will take a string on the Alfred prompt, send it to the title case server, and return the result in a notification and the clipboard.|
+| Command     | Description                                                                                                                                |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| tcs:launch  | This will start the title case server on port 9910                                                                                         |
+| tcs:stop    | This will stop the title case server                                                                                                       |
+| tcs:convert | This will take a string on the Alfred prompt, send it to the title case server, and return the result in a notification and the clipboard. |
 
 It also has a hotkey specified to take the selected text, convert it, and paste it back in place. You will have to set the hotkey yourself. The go source code is included in the workflow.
 
@@ -842,33 +846,32 @@ It also has a hotkey specified to take the selected text, convert it, and paste 
 
 This workflow is a work in progress. As I come up with more things I want to do with Folding Text program, I will be adding to this workflow. If there is something you would like to see added, just let me know. Most of the functions I found on the FoldingText website and compiled them here for easy use. The new bookmarking feature is the coolest thing!
 
-| Command | Description |
-|---|---|
-| ft:autofocus | This does the autofocus workflow. Move the todo at the current cursor to the bottom most "# Autofocus.todo" list. It creates one if there is not one. |
-| ft:next | Find the "@next" todo tag, makes it @done, and sets the next todo as @next. |
-| ft:marked | Open the current file in Marked.app |
-| ft:tagremove | Gives a list of tags in the current document and will remove all the ones selected in the list. |
-| ft:safari | This gets the tabs in the current Safari Web Browser and copies their addresses to the topmost FoldingText document. |
-| ft:chrome | This gets the tabs in the current Chrome Web Browser and copies their addresses to the topmost FoldingText document. |
-| ft:countunfolded | This will count all the characters, words, and lines of text that is not folded. Great for geting word counts of an article with all non-essential areas folded away! |
-| ft:getvisible | This copies all the unfolded text to the clipboard. |
-| ft:open | This will allow you to open any FoldingText, Markdown, or plain txt files in your home directory. It looks for the ‘ft’, ‘md’, ‘txt’ extensions. |
-| ft:gototag | This will list every tag in the topmost document. When you select one, all lines without that tag are folded away. Place the cursor in a line and unfold and you are there in the document. |
-| ft:openfilelist | This will open every file you have in the FoldingText file list. |
-| ft:AddFile | This file action allows you to place files in to your FoldingText file list. |
-| ft:showfiles | This shows you every file in your file list. Selecting one will open just that one file, or bring it to the front if it is already open. Select a file with cmd and the file will be taken off the list (but not touched on the HD). |
-| ft:docs | This gives a list of FoldingText documentation documents you can select and open.|
-| ft:addurihandler | This adds a system script to handle "ftdoc://" URIs by loading the file specified in FoldingText. It works to launch bookmarks to files and a location in the file. |
-| ft:mbkmark | This gets a URI for the current cursor location in the topmost FoldingText document and adds it to the bookmark list. You have to supply a name for the bookmark. |
-| ft:bookmarks | This shows every bookmark and allows you to open it, remove it (function key), or create a markdown link to the bookmark and paste into the topmost application (command key). |
-| ft:inbox | This allows you to add a message line to the end of a block with the @inbox tag. |
-| ft:notetag | This one will get a list of tags in the top FoldingText document. The user can select a tag and then give a message. That message will be added to the end of that tag node. |
-| Site Layout | This is a File Action that you can trigger in the Alfred browser on directories only. When you run it, it creates a file of the directory structure there down with clickable links to each file for FoldingText. You have to have the FoldingText URI handler installed. Once created, it will open the file in FoldingText. The lastest version makes use of [Alfred URI Handler](https://github.com/raguay/MyAlfred/blob/master/AlfredURIHandler.alfredworkflow).|
-| ft:lastsitelayout | This will show the last layout generated by the **Site Layout** directory action.|
-| ft:hidedone | This will hide everything tagged with @done. |
-| ft:viewtags | Allows for interactively showing/hiding tags using JavaScript for Automation. This script created by Robin Trew. |
-| ft:setsearchtag | This is used for the create tag files directory command for the Alfred browser.|
-
+| Command           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ft:autofocus      | This does the autofocus workflow. Move the todo at the current cursor to the bottom most "# Autofocus.todo" list. It creates one if there is not one.                                                                                                                                                                                                                                                                                                                |
+| ft:next           | Find the "@next" todo tag, makes it @done, and sets the next todo as @next.                                                                                                                                                                                                                                                                                                                                                                                          |
+| ft:marked         | Open the current file in Marked.app                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ft:tagremove      | Gives a list of tags in the current document and will remove all the ones selected in the list.                                                                                                                                                                                                                                                                                                                                                                      |
+| ft:safari         | This gets the tabs in the current Safari Web Browser and copies their addresses to the topmost FoldingText document.                                                                                                                                                                                                                                                                                                                                                 |
+| ft:chrome         | This gets the tabs in the current Chrome Web Browser and copies their addresses to the topmost FoldingText document.                                                                                                                                                                                                                                                                                                                                                 |
+| ft:countunfolded  | This will count all the characters, words, and lines of text that is not folded. Great for geting word counts of an article with all non-essential areas folded away!                                                                                                                                                                                                                                                                                                |
+| ft:getvisible     | This copies all the unfolded text to the clipboard.                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ft:open           | This will allow you to open any FoldingText, Markdown, or plain txt files in your home directory. It looks for the ‘ft’, ‘md’, ‘txt’ extensions.                                                                                                                                                                                                                                                                                                                     |
+| ft:gototag        | This will list every tag in the topmost document. When you select one, all lines without that tag are folded away. Place the cursor in a line and unfold and you are there in the document.                                                                                                                                                                                                                                                                          |
+| ft:openfilelist   | This will open every file you have in the FoldingText file list.                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ft:AddFile        | This file action allows you to place files in to your FoldingText file list.                                                                                                                                                                                                                                                                                                                                                                                         |
+| ft:showfiles      | This shows you every file in your file list. Selecting one will open just that one file, or bring it to the front if it is already open. Select a file with cmd and the file will be taken off the list (but not touched on the HD).                                                                                                                                                                                                                                 |
+| ft:docs           | This gives a list of FoldingText documentation documents you can select and open.                                                                                                                                                                                                                                                                                                                                                                                    |
+| ft:addurihandler  | This adds a system script to handle "ftdoc://" URIs by loading the file specified in FoldingText. It works to launch bookmarks to files and a location in the file.                                                                                                                                                                                                                                                                                                  |
+| ft:mbkmark        | This gets a URI for the current cursor location in the topmost FoldingText document and adds it to the bookmark list. You have to supply a name for the bookmark.                                                                                                                                                                                                                                                                                                    |
+| ft:bookmarks      | This shows every bookmark and allows you to open it, remove it (function key), or create a markdown link to the bookmark and paste into the topmost application (command key).                                                                                                                                                                                                                                                                                       |
+| ft:inbox          | This allows you to add a message line to the end of a block with the @inbox tag.                                                                                                                                                                                                                                                                                                                                                                                     |
+| ft:notetag        | This one will get a list of tags in the top FoldingText document. The user can select a tag and then give a message. That message will be added to the end of that tag node.                                                                                                                                                                                                                                                                                         |
+| Site Layout       | This is a File Action that you can trigger in the Alfred browser on directories only. When you run it, it creates a file of the directory structure there down with clickable links to each file for FoldingText. You have to have the FoldingText URI handler installed. Once created, it will open the file in FoldingText. The lastest version makes use of [Alfred URI Handler](https://github.com/raguay/MyAlfred/blob/master/AlfredURIHandler.alfredworkflow). |
+| ft:lastsitelayout | This will show the last layout generated by the **Site Layout** directory action.                                                                                                                                                                                                                                                                                                                                                                                    |
+| ft:hidedone       | This will hide everything tagged with @done.                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ft:viewtags       | Allows for interactively showing/hiding tags using JavaScript for Automation. This script created by Robin Trew.                                                                                                                                                                                                                                                                                                                                                     |
+| ft:setsearchtag   | This is used for the create tag files directory command for the Alfred browser.                                                                                                                                                                                                                                                                                                                                                                                      |
 
 **File Actions:**
 
@@ -884,11 +887,11 @@ This will take the directory in Alfred Browser and search for files with the ft 
 
  I am often needing to add up a series to times in a document. This workflow makes it very easy. Clear the accumulator, select a time value, and hit your hotkey combination you assigned in this workflow. The time will be accumulated. You can show the time in Hr:min:sec format or just plain minutes. Have fun!
 
-| Command | Description |
-|---|---|
-| ta:clear   | This clears the accumulator |
+| Command    | Description                                |
+| ---------- | ------------------------------------------ |
+| ta:clear   | This clears the accumulator                |
 | ta:showmin | Show the accumulated time in just minutes. |
-| ta:showhr  | Show the accumulated time |
+| ta:showhr  | Show the accumulated time                  |
 
 There is a hotkey you need to set for adding the currently selected time.
 
@@ -900,13 +903,13 @@ This workflow has one command:  zi:view. This will show you the zip files in you
 
 This workflow is a replication of my "tm:case" command of the Text Massager Workflow done in Swift. You have to have xCode 6 beta 6 to recompile the executable, but it should run on any system that is OS Maverick and up. Instructions for recompiling the Alfred Swift Library and the program is in the workflow directory. The one command is "tc:convert". The string given will be shown in capital case, upper case, lower case, and title case.
 
----
+* * *
 
 ## Alfred Themes
 
 I have two themes in this repository: Wild-Cherry Dark and Wild-Cherry Light. These were adopted from [Wild-Cherry](https://github.com/mashaal/wild-cherry).
 
----
+* * *
 
 Please let me know if you have any problems, suggestions, or commits. These are documented more fully on my web site <a href="http://customct.com">http://customct.com</a>.
 
