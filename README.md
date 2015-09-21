@@ -524,6 +524,14 @@ This file action calculates the relative path from the user’s home directory a
 
 This file action calculates the relative path from the user’s home directory and copies it to the clipboard. It will then paste the relative path to the topmost application.
 
+**Copy Absolute Path**
+
+This action copies the absolute path to the file item to the clipboard.
+
+**Paste Absolute Path**
+
+This action copies the absolute path to the file item to the clipboard. It will then paste it in to the topmost application.
+
 ## Dropzone 3 Workflow
 
 This workflow is for easily getting to the Dropzone 3 actions directory in Alfred. Use the keyword **dz:browse** to open the directory in Alfred Browser or hold the **CMD** key to show in **Finder**.
