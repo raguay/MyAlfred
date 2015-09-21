@@ -538,6 +538,8 @@ This workflow is for easily getting to the Dropzone 3 actions directory in Alfre
 
 ## Mjolnir Workflow
 
+###Note: This workflow is no longer supported. Use as is. I use Hammerspoon workflow instead, which is much easier to support and use.
+
 This workflow is for running scripts using Mjolnir to control your windows. This is just a sample of the things that can be done. Follow this layout and you can do many neat things with Mjolnir.
 
 First off, download Mjolnir from <https://github.com/mjolnir-io/mjolnir.git>. That site also tells how to get started. To install the needed modules and configuration file, you will need to run the "mj:install" command. This will also install the cli program called "mjolnir".
