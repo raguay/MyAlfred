@@ -498,6 +498,18 @@ Opens the URL, URI, or file given using the Mac OS X open terminal command. This
 
 This is a file filter for PDF files. I have many and this really makes finding them easy.
 
+**ab:cparent**
+
+This command will get the currently selected file in Finder, Path Finder, or Commander One and copy it to the parent directory. Works on files or directories.
+
+**ab:mparent**
+
+This command will get the currently selected file in Finder, Path Finder, or Commander One and move it to the parent directory. Works on files or directories.
+
+**ab:cfile**
+
+This command will copy the contents of the file to the clipboard. You need to be sure it is a text file.
+
 ### Alfred Browser Actions
 
 **Get File Name**
@@ -531,6 +543,14 @@ This action copies the absolute path to the file item to the clipboard.
 **Paste Absolute Path**
 
 This action copies the absolute path to the file item to the clipboard. It will then paste it in to the topmost application.
+
+**Copy/Move to Parent Directory**
+
+These two actions will copy/move the selected file to the parent directory.
+
+**Copy File Contents to Pasteboard**
+
+This action will copy the contents of the file to the pasteboard.
 
 ## Dropzone 3 Workflow
 
