@@ -3,6 +3,7 @@
 This is where I am keeping my Alfred 2 workflows. It is best to download the whole repository as a zip and then double-click on the workflow you want to install into your Alfred. I currently have the following workflows:
 
 ## Quiver Workflow
+
 This workflow allows you to create templates with Handlebar syntax inside of the [Quiver](http://happenapps.com/#quiver) program. To use the workflow, you have to have Node.js installed first. I recommend using [Homebrew](http://brew.io) to install it.
 
 Once Node.js is installed, go to your Quiver Library file in Alfred Browser and select the “Set Quiver Library” file action. This tells the workflow where your templates (or snippets) are to be kept. Create a workbook called “Snippets” with one note called Defaults. The Defaults note has to have one code block set to JSON and the defaults for the Handlebar expansions set. The rest of the notes will be templates.
@@ -850,9 +851,11 @@ This works great for me being a missionary. You can change it to meet your own n
 
 Sometimes you just need a place to edit some text quickly. Or, simply write a short note to store in the clipboard history (it actually works better than you think). That is where this workflow comes in handy.
 
-After you set a hotkey, you can select text and edit it on the Alfred command line. When you press enter, it will be placed into the clipboard. If you press <code><cmd></code> and enter, it will place it into the clipboard and the top most application.
+After you set a hotkey, you can select text and edit it on the Alfred command line. When you press enter, it will be placed into the clipboard. If you press <code><cmd></code> and enter, it will place it into the clipboard and the top most application. If you press <code><ctrl></code> and enter, it will save the text to the specified note file.
 
-If you invoke the keyword “sp:” or if you press the hotkey without a selection, it will offer to put the clipboard as the text to edit. Press enter on the “clipboard” option and the contents of the clipboard will be copied to the Alfred command line for editing.
+If you invoke the keyword “sp:” or if you press the hotkey without a selection, it will offer to put the clipboard as the text to edit. Press enter on the “clipboard” option and the contents of the clipboard will be copied to the Alfred command line for editing. All the above saving options are available.
+
+To use the note saving feature, use the Alfred Browser to go to a file, press right arrow, and select the "Set Note File" option. Now, you can save the text to a note file. It will append to the end of the file.
 
 ## DwellClick Workflow
 
