@@ -6,9 +6,9 @@ This is where I am keeping my Alfred 2 workflows. It is best to download the who
 
 This workflow allows you to create templates with Handlebar syntax inside of the [Quiver](http://happenapps.com/#quiver) program. To use the workflow, you have to have Node.js installed first. I recommend using [Homebrew](http://brew.io) to install it.
 
-Once Node.js is installed, go to your Quiver Library file in Alfred Browser and select the “Set Quiver Library” file action. This tells the workflow where your templates (or snippets) are to be kept. Create a workbook called “Snippets” with one note called Defaults. The Defaults note has to have one code block set to JSON and the defaults for the Handlebar expansions set. The rest of the notes will be templates.
+Once Node.js is installed, go to your Quiver Library file in Alfred Browser and select the “Set Quiver Library” file action. This tells the workflow where your templates (or snippets) are to be kept. Create a workbook called “Snippets” with one note called Defaults. The Defaults note has to have one code block set to JSON and the defaults for the Handlebar expansions set. The rest of the notes will be templates. Once you create or load the Snippets Notes, run the **qw:runint** command to set it up.
 
-When you run “qt:expand” or “qt:exptext”, it will list all of your template files in the Snippets notebook. When you select one, it will be expanded with any json cell the note and the Defaults json note data. The “qt:expand” will put the result into your clipboard and the topmost application. The “qt:exptext” will give it to TextExpander to expand and place in the topmost application. With the “qt:exptext” command, TextExpander will also expand any of it’s macros in the template file. I mostly use it for placing the cursor after expansion. These two commands also have an associated Alfred Browser File action.
+When you run “qt”, it will list all of your template files in the Snippets notebook. When you select one, it will be expanded with any json cell the note and the Defaults json note data. The help files explain more than this does.
 
 There are four special helper function for Handlebars defined. They are:
 
