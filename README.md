@@ -826,6 +826,7 @@ This workflow is for working with todo lists using TaskPaper or FoldingText. But
 |    t:managemonthly | This allows you to pick a monthly task and edit the file or delete the file.                                                                                                                                                                                                            |
 |     t:manageweekly | This allows you to pick a weekly task to edit or delete.                                                                                                                                                                                                                                |
 | t:editeverydaytask | This allows you to edit the everyday task file.                                                                                                                                                                                                                                         |
+| t:addtask | This allows the user to add new tasks to the project in TaskPaper or the one last opened. |
 
 ## Alfred Bible
 
