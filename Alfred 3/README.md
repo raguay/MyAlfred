@@ -12,24 +12,30 @@ Once Node.js is installed, go to your Quiver Library file in Alfred Browser and 
 
 When you run “qt”, it will list all of your template files in the Snippets notebook. When you select one, it will be expanded with any json cells in the note and the Defaults json data. The help files explain more than this does.
 
-There are four special helper function for Handlebars defined. They are:
+There are the special helper function for Handlebars that are defined. They are:
 
 {{env &lt;environment variable&gt;}}
+
 This command will be replaced in the snippet with the specified environment variable.
 
 {{clip &lt;num&gt;}}
+
 This command will be replaced in the snippet with the specified clipboard history. the _num_ is zero referenced (ie: begins with zero being the current clipboard contents). The largest value for _num_ depends on the environment variable setting for _clipHist_. The default value is 5. The clipboard history is taken from **Alfred**'s database of clipboard history.
 
 {{save &lt;name&gt; &lt;text&gt;}}
+
 This command creates a helper named “&lt;name&gt;” with the expanding text of “&lt;text&gt;”. It also places the given “&lt;text&gt;” at the point of definition. This allows you to create text snippets on the fly inside the template. Very handy.
 
 {{clpboard}}
+
 This helper command places the current clipboard contents at the point in the template. This command is using the command line command _pbpaste_ to get the clipboard contents.
 
 {{date &lt;format&gt;}}
+
 This will format the current date and time as per the format string given. See the help document that is loaded upon initialization.
 
 {{date &lt;date/time&gt; &lt;format&gt;}}
+
 This takes the date/time string and formats it according to the format given.  See the help document that is loaded upon initialization.
 
 
