@@ -239,11 +239,13 @@ This will pipe the current file to the currently setup Picat script.
 
 ## AnyBar Workflow
 
-This workflow requires the anybar application to be install. The easiest way to install is by home-brew cask:
+This workflow requires the anybar application to be installed. The easiest way to install is with Homebrew-Cask:
 
+```
 brew cask install anybar
+```
 
-If you do not have home-brew cask installed, follow the instructions here: [HomeBrew Cask](http://caskroom.io/). If you do not have HomeBrew installed, follow the instructions here: [HomeBrew](http://brew.sh/). Then execute the above line.
+If you do not have Homebrew installed, follow the instructions here: [Homebrew](http://brew.sh/). Then execute the above line.
 
 Once installed, you can use the features of this workflow:
 
