@@ -645,6 +645,10 @@ These two actions will copy/move the selected file to the parent directory.
 
 This action will copy the contents of the file to the pasteboard.
 
+**Rename File**
+
+This action prompts the user for a new file name to rename the current file.
+
 ## Dropzone 3 Workflow
 
 This workflow is for easily getting to the Dropzone 3 actions directory in Alfred. Use the keyword **dz:browse** to open the directory in Alfred Browser or hold the **CMD** key to show in **Finder**.
