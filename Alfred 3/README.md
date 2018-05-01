@@ -4,6 +4,11 @@ This is where I am keeping my Alfred 3 workflows. Every workflow in this directo
 
 To install a wokflow, it is best to download the whole repository as a zip and then double-click on the workflow you want to install into your Alfred. I currently have the following workflows:
 
+## NotePad Workflow
+
+This workflow allows you to copy notes to the [NotePad](https://github.com/raguay/TextBarScripts) script for [TextBar](http://richsomerfield.com/apps/textbar/), or paste the notes there into the topmost application. This workflow has many hotkeys defined to make using NotePad very simple.
+
+
 ## Quiver Workflow
 
 This workflow allows you to create templates with Handlebar syntax inside of the [Quiver](http://happenapps.com/#quiver) program. To use the workflow, you have to have Node.js installed first. I recommend using [Homebrew](http://brew.io) to install it.
