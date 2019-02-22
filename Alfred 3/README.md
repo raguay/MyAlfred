@@ -4,6 +4,10 @@ This is where I am keeping my Alfred 3 workflows. Every workflow in this directo
 
 To install a wokflow, it is best to download the whole repository as a zip and then double-click on the workflow you want to install into your Alfred. I currently have the following workflows:
 
+## Copy Clips Workflow
+
+This workflow gives you an infinite number of named clipboards to save text to. It stores each one in it's own file in the Data area for the workflow. You can also view and delete each clipboard with the `copyclips` Alfred prompt command. It also has several external commands to use with other workflows.
+
 ## NotePad Workflow
 
 This workflow allows you to copy notes to the [NotePad](https://github.com/raguay/TextBarScripts) script for [TextBar](http://richsomerfield.com/apps/textbar/), or paste the notes there into the topmost application. This workflow has many hotkeys defined to make using NotePad very simple.
